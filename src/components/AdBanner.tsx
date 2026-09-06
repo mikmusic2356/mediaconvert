@@ -10,7 +10,7 @@ export interface AdBannerProps {
 export const AdBanner: React.FC<AdBannerProps> = ({
   slotType,
   adSlot,
-  adClient,
+  adClient = 'ca-pub-5108692655083046',
   className = '',
 }) => {
   const isConfigured = Boolean(adClient && adSlot);
