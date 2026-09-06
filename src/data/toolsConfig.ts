@@ -192,7 +192,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir JPG a PNG Online Gratis — Sin Límites ni Pérdidas | MediaConvert',
       metaDescription: 'Convierte archivos JPG a PNG en alta calidad y sin pérdidas. Conversión local, instantánea, segura y 100% privada sin subir tus imágenes a servidores.',
-      canonical: 'https://mediaconvert.io/convert/jpg-to-png',
+      canonical: 'https://mediaconvert.online/convert/jpg-to-png',
       keywords: ['convertir jpg a png', 'jpg to png', 'jpeg a png', 'transformar jpg en png transparente', 'conversor imagenes gratis']
     },
     faq: [
@@ -257,7 +257,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir PNG a JPG Online — Rápido, Gratis y Sin Límites | MediaConvert',
       metaDescription: 'Convierte tus imágenes PNG a JPG en segundos. Reduce el peso de tus fotos conservando máxima calidad visual.',
-      canonical: 'https://mediaconvert.io/convert/png-to-jpg',
+      canonical: 'https://mediaconvert.online/convert/png-to-jpg',
       keywords: ['convertir png a jpg', 'png to jpg', 'png a jpeg', 'reducir tamaño png a jpg']
     },
     faq: [
@@ -306,7 +306,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertidor de Imágenes Online — Gratuito y Sin Límites | MediaConvert',
       metaDescription: 'Convierte imágenes a cualquier formato online: JPG, PNG, WebP, SVG, HEIC y más. Rápido, seguro y privado.',
-      canonical: 'https://mediaconvert.io/convert/image-converter',
+      canonical: 'https://mediaconvert.online/convert/image-converter',
       keywords: ['convertidor de imagenes', 'convertir imagenes online', 'conversor formato imagen', 'image converter free']
     },
     faq: [
@@ -350,7 +350,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir WEBP a PNG Online — Rápido y Gratis | MediaConvert',
       metaDescription: 'Convierte WebP a PNG con canal alfa transparente y máxima resolución. 100% privado en tu navegador.',
-      canonical: 'https://mediaconvert.io/convert/webp-to-png',
+      canonical: 'https://mediaconvert.online/convert/webp-to-png',
       keywords: ['webp a png', 'convertir webp a png', 'transformar webp en png transparente']
     },
     faq: [
@@ -387,7 +387,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir JFIF a PNG Online Gratis | MediaConvert',
       metaDescription: 'Transforma imágenes JFIF a PNG en segundos. Conversor gratuito y sin registros.',
-      canonical: 'https://mediaconvert.io/convert/jfif-to-png',
+      canonical: 'https://mediaconvert.online/convert/jfif-to-png',
       keywords: ['jfif a png', 'convertir jfif a png', 'cambiar jfif a png']
     },
     faq: [{ question: '¿Por qué se descargan imágenes en .jfif?', answer: 'Es una variación del formato JPEG utilizada por ciertos navegadores web.' }],
@@ -422,7 +422,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir PNG a SVG Online Gratis — Vectorizar Imágenes | MediaConvert',
       metaDescription: 'Convierte imágenes PNG a vectores SVG escalables. Ideal para logotipos, iconos y diseño gráfico.',
-      canonical: 'https://mediaconvert.io/convert/png-to-svg',
+      canonical: 'https://mediaconvert.online/convert/png-to-svg',
       keywords: ['png a svg', 'convertir png a svg', 'vectorizar png', 'png to svg converter']
     },
     faq: [{ question: '¿Se puede escalar el SVG resultante?', answer: 'Sí, el formato SVG es vectorial y no pierde nitidez a ningún tamaño.' }],
@@ -457,7 +457,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir HEIC a JPG Online Gratis — Fotos de iPhone | MediaConvert',
       metaDescription: 'Convierte fotos HEIC de Apple a JPG en alta calidad sin perder resolución. Rápido y 100% seguro.',
-      canonical: 'https://mediaconvert.io/convert/heic-to-jpg',
+      canonical: 'https://mediaconvert.online/convert/heic-to-jpg',
       keywords: ['heic a jpg', 'convertir heic a jpg', 'fotos iphone a jpg', 'heif to jpg']
     },
     faq: [{ question: '¿Qué es un archivo HEIC?', answer: 'Es el formato de alta eficiencia usado por defecto en cámaras de iPhone desde iOS 11.' }],
@@ -492,7 +492,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir HEIC a PNG Online Gratis | MediaConvert',
       metaDescription: 'Convierte fotos HEIC a PNG en alta calidad sin pérdida de detalles. 100% privado.',
-      canonical: 'https://mediaconvert.io/convert/heic-to-png',
+      canonical: 'https://mediaconvert.online/convert/heic-to-png',
       keywords: ['heic a png', 'convertir heic a png', 'heif to png']
     },
     faq: [{ question: '¿Se preserva la calidad original?', answer: 'Sí, la decodificación HEIC se guarda en PNG sin compresión destructiva.' }],
@@ -527,7 +527,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir WEBP a JPG Online Gratis | MediaConvert',
       metaDescription: 'Convierte imágenes WebP a JPG en segundos. Gratuito, rápido y sin marcas de agua.',
-      canonical: 'https://mediaconvert.io/convert/webp-to-jpg',
+      canonical: 'https://mediaconvert.online/convert/webp-to-jpg',
       keywords: ['webp a jpg', 'convertir webp a jpg', 'webp to jpeg']
     },
     faq: [{ question: '¿Por qué convertir WebP a JPG?', answer: 'Para poder abrir las imágenes en programas antiguos que aún no soportan WebP.' }],
@@ -562,7 +562,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertidor SVG Online — Exportar y Convertir SVG | MediaConvert',
       metaDescription: 'Convierte archivos SVG a PNG, JPG, PDF o vectoriza imágenes a SVG online. Gratis y rápido.',
-      canonical: 'https://mediaconvert.io/convert/svg-converter',
+      canonical: 'https://mediaconvert.online/convert/svg-converter',
       keywords: ['svg converter', 'convertir svg', 'svg a png', 'conversor vectorial']
     },
     faq: [{ question: '¿Puedo convertir SVG a PNG con alta resolución?', answer: 'Sí, puedes renderizar el SVG a cualquier escala sin pérdida de nitidez.' }],
@@ -600,7 +600,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertidor de Vídeo Online Gratis — MP4, MOV, WEBM | MediaConvert',
       metaDescription: 'Convierte vídeos online a MP4, MOV, WebM y más formatos de alta calidad sin marcas de agua.',
-      canonical: 'https://mediaconvert.io/convert/video-converter',
+      canonical: 'https://mediaconvert.online/convert/video-converter',
       keywords: ['convertidor de video', 'video converter online', 'convertir mp4', 'convertir video a mp3']
     },
     faq: [{ question: '¿Se mantiene la calidad de audio y vídeo?', answer: 'Sí, los perfiles de codificación preservan la tasa de bits y resolución original.' }],
@@ -635,7 +635,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertidor de Audio Online — MP3, WAV, OGG, FLAC | MediaConvert',
       metaDescription: 'Convierte pistas de audio entre formatos MP3, WAV, OGG, AAC y FLAC con máxima calidad sonora.',
-      canonical: 'https://mediaconvert.io/convert/audio-converter',
+      canonical: 'https://mediaconvert.online/convert/audio-converter',
       keywords: ['convertidor de audio', 'audio converter', 'convertir mp3', 'wav a mp3']
     },
     faq: [{ question: '¿Cuál es el mejor formato de audio?', answer: 'MP3 ofrece la mejor compatibilidad; WAV y FLAC ofrecen la mayor calidad sin pérdidas.' }],
@@ -670,7 +670,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertidor MP3 Online Gratis — Convertir a MP3 | MediaConvert',
       metaDescription: 'Convierte audios y vídeos a MP3 online en alta calidad (320 kbps). Fácil, rápido y gratis.',
-      canonical: 'https://mediaconvert.io/convert/mp3-converter',
+      canonical: 'https://mediaconvert.online/convert/mp3-converter',
       keywords: ['mp3 converter', 'convertir a mp3', 'conversor mp3 gratis']
     },
     faq: [{ question: '¿Puedo convertir vídeos a MP3?', answer: 'Sí, la herramienta extrae la pista sonora directamente en formato MP3.' }],
@@ -705,7 +705,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertidor MP4 Online — Convertir Vídeos a MP4 | MediaConvert',
       metaDescription: 'Convierte vídeos a MP4 online gratis. Soporta MOV, AVI, MKV, WebM a MP4 en alta calidad.',
-      canonical: 'https://mediaconvert.io/convert/mp4-converter',
+      canonical: 'https://mediaconvert.online/convert/mp4-converter',
       keywords: ['mp4 converter', 'convertir a mp4', 'conversor mp4 online', 'mov a mp4']
     },
     faq: [{ question: '¿Por qué MP4 es el formato más recomendado?', answer: 'Porque funciona en el 100% de navegadores, teléfonos, consolas y reproductores de televisión.' }],
@@ -740,7 +740,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir MP4 a MP3 Online Gratis — Extraer Audio | MediaConvert',
       metaDescription: 'Convierte MP4 a MP3 online en segundos. Extrae pistas de audio de vídeos en alta calidad sin descargas.',
-      canonical: 'https://mediaconvert.io/convert/mp4-to-mp3',
+      canonical: 'https://mediaconvert.online/convert/mp4-to-mp3',
       keywords: ['mp4 a mp3', 'convertir mp4 a mp3', 'extraer audio de video', 'mp4 to mp3 converter']
     },
     faq: [{ question: '¿Pierde calidad el sonido?', answer: 'No, el audio se extrae conservando la frecuencia de muestreo y fidelidad de la pista original.' }],
@@ -775,7 +775,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir Video a MP3 Online Gratis | MediaConvert',
       metaDescription: 'Convierte vídeos de cualquier formato a MP3 online. Rápido, gratis y sin programas.',
-      canonical: 'https://mediaconvert.io/convert/video-to-mp3',
+      canonical: 'https://mediaconvert.online/convert/video-to-mp3',
       keywords: ['video a mp3', 'convertir video a mp3', 'extraer musica de video']
     },
     faq: [{ question: '¿Puedo convertir varios vídeos a la vez?', answer: 'Sí, puedes cargar múltiples vídeos y descargarlos todos juntos.' }],
@@ -810,7 +810,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir MOV a MP4 Online Gratis — QuickTime a MP4 | MediaConvert',
       metaDescription: 'Convierte vídeos MOV de iPhone y Mac a formato MP4 online. Alta calidad y rápida conversión.',
-      canonical: 'https://mediaconvert.io/convert/mov-to-mp4',
+      canonical: 'https://mediaconvert.online/convert/mov-to-mp4',
       keywords: ['mov a mp4', 'convertir mov a mp4', 'quicktime a mp4', 'mov to mp4 converter']
     },
     faq: [{ question: '¿Se reduce el tamaño del archivo?', answer: 'Sí, la compresión H.264 en contenedor MP4 reduce sustancialmente el peso respecto al archivo MOV original.' }],
@@ -845,7 +845,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir MP3 a OGG Online Gratis | MediaConvert',
       metaDescription: 'Convierte archivos MP3 a OGG Vorbis online en alta calidad. Rápido, seguro y gratuito.',
-      canonical: 'https://mediaconvert.io/convert/mp3-to-ogg',
+      canonical: 'https://mediaconvert.online/convert/mp3-to-ogg',
       keywords: ['mp3 a ogg', 'convertir mp3 a ogg', 'mp3 to ogg vorbis']
     },
     faq: [{ question: '¿Qué ventaja tiene el formato OGG?', answer: 'Es un estándar abierto sin costes de licencia que ofrece excelente relación calidad-tamaño.' }],
@@ -883,7 +883,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertidor de PDF Online Gratis — Convertir PDF | MediaConvert',
       metaDescription: 'Convierte archivos PDF a Word, JPG, EPUB y más. Herramienta online gratuita sin registros.',
-      canonical: 'https://mediaconvert.io/convert/pdf-converter',
+      canonical: 'https://mediaconvert.online/convert/pdf-converter',
       keywords: ['pdf converter', 'convertir pdf', 'conversor pdf online', 'pdf a word']
     },
     faq: [{ question: '¿Se mantiene el formato del documento?', answer: 'Sí, las fuentes, tablas y alineaciones se preservan con máxima fidelidad.' }],
@@ -918,7 +918,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertidor de Documentos Online Gratis | MediaConvert',
       metaDescription: 'Convierte documentos DOCX, PDF, TXT, Markdown y hojas de cálculo online con total privacidad.',
-      canonical: 'https://mediaconvert.io/convert/document-converter',
+      canonical: 'https://mediaconvert.online/convert/document-converter',
       keywords: ['convertidor de documentos', 'document converter', 'convertir docx a pdf', 'conversor documentos']
     },
     faq: [{ question: '¿Mis documentos están protegidos?', answer: 'Sí, la privacidad es absoluta y los archivos se procesan bajo protocolos seguros sin almacenamiento permanente.' }],
@@ -953,7 +953,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertidor de Ebooks Online Gratis — EPUB, PDF, MOBI | MediaConvert',
       metaDescription: 'Convierte libros electrónicos entre EPUB, PDF y MOBI online. Compatible con Kindle y Kobo.',
-      canonical: 'https://mediaconvert.io/convert/ebook-converter',
+      canonical: 'https://mediaconvert.online/convert/ebook-converter',
       keywords: ['ebook converter', 'convertidor libros electronicos', 'epub a pdf', 'pdf a epub']
     },
     faq: [{ question: '¿Qué formato es mejor para Kindle?', answer: 'EPUB o MOBI son ideales para lectura cómoda y ajuste dinámico de tamaño de letra.' }],
@@ -988,7 +988,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir PDF a Word Online Gratis — DOCX Editable | MediaConvert',
       metaDescription: 'Convierte PDF a Word (DOCX) online gratis y editable. Conserva tipografía, tablas e imágenes.',
-      canonical: 'https://mediaconvert.io/convert/pdf-to-word',
+      canonical: 'https://mediaconvert.online/convert/pdf-to-word',
       keywords: ['pdf a word', 'convertir pdf a word', 'pdf to word editable', 'pdf a docx']
     },
     faq: [{ question: '¿Se puede editar el texto tras la conversión?', answer: 'Sí, obtienes un archivo .docx estándar completamente modificable.' }],
@@ -1023,7 +1023,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir PDF a JPG Online Gratis — Extraer Páginas | MediaConvert',
       metaDescription: 'Convierte documentos PDF a imágenes JPG en alta definición online. Fácil y gratis.',
-      canonical: 'https://mediaconvert.io/convert/pdf-to-jpg',
+      canonical: 'https://mediaconvert.online/convert/pdf-to-jpg',
       keywords: ['pdf a jpg', 'convertir pdf a jpg', 'extraer imagenes pdf', 'pdf to jpg']
     },
     faq: [{ question: '¿Puedo descargar todas las páginas a la vez?', answer: 'Sí, se genera automáticamente un archivo ZIP con todas las páginas numeradas.' }],
@@ -1058,7 +1058,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir PDF a EPUB Online Gratis | MediaConvert',
       metaDescription: 'Convierte archivos PDF a formato EPUB online para leer en Kindle, Kobo o iPad.',
-      canonical: 'https://mediaconvert.io/convert/pdf-to-epub',
+      canonical: 'https://mediaconvert.online/convert/pdf-to-epub',
       keywords: ['pdf a epub', 'convertir pdf a epub', 'pdf to epub converter']
     },
     faq: [{ question: '¿Por qué convertir PDF a EPUB?', answer: 'Para poder aumentar el tamaño de letra sin tener que hacer zoom horizontal en cada página.' }],
@@ -1093,7 +1093,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir EPUB a PDF Online Gratis | MediaConvert',
       metaDescription: 'Convierte libros EPUB a formato PDF online para imprimir o leer en PC.',
-      canonical: 'https://mediaconvert.io/convert/epub-to-pdf',
+      canonical: 'https://mediaconvert.online/convert/epub-to-pdf',
       keywords: ['epub a pdf', 'convertir epub a pdf', 'epub to pdf converter']
     },
     faq: [{ question: '¿Se pueden imprimir los PDFs resultantes?', answer: 'Sí, se generan en formato estándar A4 o Carta listos para impresión.' }],
@@ -1128,7 +1128,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir HEIC a PDF Online Gratis — Fotos iPhone a PDF | MediaConvert',
       metaDescription: 'Convierte fotos HEIC de iPhone a documento PDF online. Une múltiples imágenes en un archivo.',
-      canonical: 'https://mediaconvert.io/convert/heic-to-pdf',
+      canonical: 'https://mediaconvert.online/convert/heic-to-pdf',
       keywords: ['heic a pdf', 'convertir heic a pdf', 'fotos iphone a pdf']
     },
     faq: [{ question: '¿Puedo unir varias fotos en un solo PDF?', answer: 'Sí, todas las fotos seleccionadas se compilan ordenadamente en un único archivo PDF.' }],
@@ -1163,7 +1163,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir Word DOCX a PDF Online Gratis | MediaConvert',
       metaDescription: 'Convierte documentos Word DOCX a PDF online en alta calidad. Rápido, seguro y gratuito.',
-      canonical: 'https://mediaconvert.io/convert/docx-to-pdf',
+      canonical: 'https://mediaconvert.online/convert/docx-to-pdf',
       keywords: ['docx a pdf', 'convertir word a pdf', 'doc a pdf', 'word to pdf']
     },
     faq: [{ question: '¿Se mantienen las fuentes del documento?', answer: 'Sí, todas las fuentes tipográficas se incrustan en el PDF resultante.' }],
@@ -1198,7 +1198,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir JPG a PDF Online Gratis — Unir Imágenes | MediaConvert',
       metaDescription: 'Convierte imágenes JPG a PDF online. Une fotos en un solo documento de forma rápida y gratuita.',
-      canonical: 'https://mediaconvert.io/convert/jpg-to-pdf',
+      canonical: 'https://mediaconvert.online/convert/jpg-to-pdf',
       keywords: ['jpg a pdf', 'convertir jpg a pdf', 'unir fotos en pdf', 'imagenes a pdf']
     },
     faq: [{ question: '¿Puedo cambiar el orden de las páginas?', answer: 'Sí, puedes reordenar las imágenes antes de compilar el PDF.' }],
@@ -1236,7 +1236,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir Video a GIF Online Gratis | MediaConvert',
       metaDescription: 'Convierte vídeos a GIF animados online. Rápido, fácil y sin marcas de agua.',
-      canonical: 'https://mediaconvert.io/convert/video-to-gif',
+      canonical: 'https://mediaconvert.online/convert/video-to-gif',
       keywords: ['video a gif', 'convertir video a gif', 'crear gif de video', 'video to gif converter']
     },
     faq: [{ question: '¿El GIF se reproduce en bucle infinito?', answer: 'Sí, las animaciones generadas incluyen el flag de repetición continua.' }],
@@ -1271,7 +1271,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir MP4 a GIF Online Gratis | MediaConvert',
       metaDescription: 'Convierte vídeos MP4 a GIF animados online en alta calidad. Gratis y sin límites.',
-      canonical: 'https://mediaconvert.io/convert/mp4-to-gif',
+      canonical: 'https://mediaconvert.online/convert/mp4-to-gif',
       keywords: ['mp4 a gif', 'convertir mp4 a gif', 'mp4 to gif online']
     },
     faq: [{ question: '¿Cómo reducir el peso del GIF?', answer: 'Disminuyendo la resolución o la tasa de cuadros por segundo (FPS).' }],
@@ -1306,7 +1306,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir WEBM a GIF Online Gratis | MediaConvert',
       metaDescription: 'Convierte archivos WebM a GIF animados online de forma rápida y gratuita.',
-      canonical: 'https://mediaconvert.io/convert/webm-to-gif',
+      canonical: 'https://mediaconvert.online/convert/webm-to-gif',
       keywords: ['webm a gif', 'convertir webm a gif', 'webm to gif']
     },
     faq: [{ question: '¿Mantiene la fluidez del vídeo?', answer: 'Sí, ajustando los FPS se conserva la suavidad visual del movimiento.' }],
@@ -1341,7 +1341,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir APNG a GIF Online Gratis | MediaConvert',
       metaDescription: 'Transforma imágenes APNG animadas a formato GIF online. Rápido y gratuito.',
-      canonical: 'https://mediaconvert.io/convert/apng-to-gif',
+      canonical: 'https://mediaconvert.online/convert/apng-to-gif',
       keywords: ['apng a gif', 'convertir apng a gif', 'png animado a gif']
     },
     faq: [{ question: '¿Qué es un APNG?', answer: 'Es una extensión del formato PNG que permite almacenar animaciones con soporte de transparencia de 24 bits.' }],
@@ -1376,7 +1376,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir GIF a MP4 Online Gratis — Reducir Peso | MediaConvert',
       metaDescription: 'Convierte archivos GIF a vídeos MP4 online y reduce su peso hasta un 90%. Gratis y rápido.',
-      canonical: 'https://mediaconvert.io/convert/gif-to-mp4',
+      canonical: 'https://mediaconvert.online/convert/gif-to-mp4',
       keywords: ['gif a mp4', 'convertir gif a mp4', 'gif to mp4 converter', 'reducir peso gif']
     },
     faq: [{ question: '¿Por qué convertir GIF a MP4?', answer: 'Un MP4 suele pesar entre 5 y 10 veces menos que un GIF equivalente y se reproduce más suavemente.' }],
@@ -1411,7 +1411,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir GIF a APNG Online Gratis | MediaConvert',
       metaDescription: 'Convierte GIFs a PNG animados (APNG) online con mejor calidad gráfica y sin pérdidas.',
-      canonical: 'https://mediaconvert.io/convert/gif-to-apng',
+      canonical: 'https://mediaconvert.online/convert/gif-to-apng',
       keywords: ['gif a apng', 'convertir gif a apng', 'gif to apng']
     },
     faq: [{ question: '¿Qué navegadores soportan APNG?', answer: 'Todos los navegadores modernos (Chrome, Safari, Firefox, Edge) soportan APNG de forma nativa.' }],
@@ -1446,7 +1446,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Crear GIF a partir de Fotos Online Gratis | MediaConvert',
       metaDescription: 'Une imágenes JPG o PNG para crear animaciones GIF online. Fácil, rápido y gratis.',
-      canonical: 'https://mediaconvert.io/convert/image-to-gif',
+      canonical: 'https://mediaconvert.online/convert/image-to-gif',
       keywords: ['imagen a gif', 'fotos a gif', 'crear gif de fotos', 'images to gif']
     },
     faq: [{ question: '¿Puedo elegir el orden de las fotos?', answer: 'Sí, puedes organizar la secuencia de fotogramas antes de exportar el GIF.' }],
@@ -1481,7 +1481,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir MOV a GIF Online Gratis — iPhone a GIF | MediaConvert',
       metaDescription: 'Convierte vídeos MOV de Apple a formato GIF animado online. Rápido y sin marcas de agua.',
-      canonical: 'https://mediaconvert.io/convert/mov-to-gif',
+      canonical: 'https://mediaconvert.online/convert/mov-to-gif',
       keywords: ['mov a gif', 'convertir mov a gif', 'iphone video a gif', 'mov to gif']
     },
     faq: [{ question: '¿Funciona con Live Photos exportadas?', answer: 'Sí, los vídeos MOV generados por Live Photos se convierten perfectamente a GIF.' }],
@@ -1516,7 +1516,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Convertir AVI a GIF Online Gratis | MediaConvert',
       metaDescription: 'Convierte vídeos AVI a GIF animados online en segundos. Gratis y sin registros.',
-      canonical: 'https://mediaconvert.io/convert/avi-to-gif',
+      canonical: 'https://mediaconvert.online/convert/avi-to-gif',
       keywords: ['avi a gif', 'convertir avi a gif', 'avi to gif converter']
     },
     faq: [{ question: '¿Se puede limitar la duración?', answer: 'Sí, se extrae el fragmento seleccionado para mantener un archivo GIF ligero.' }],
@@ -1559,7 +1559,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Comprimir JPG Online Gratis — Reducir Tamaño de Fotos | MediaConvert',
       metaDescription: 'Comprime imágenes JPG online gratis sin perder calidad. Reduce el peso de tus fotos para web o correo.',
-      canonical: 'https://mediaconvert.io/compress/compress-jpg',
+      canonical: 'https://mediaconvert.online/compress/compress-jpg',
       keywords: ['comprimir jpg', 'reducir tamaño jpg', 'optimizar fotos jpeg', 'compress jpg online']
     },
     faq: [
@@ -1596,7 +1596,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Comprimir PNG Online Gratis — Reducir Peso de PNG | MediaConvert',
       metaDescription: 'Comprime imágenes PNG sin perder calidad ni fondos transparentes. 100% privado en tu navegador.',
-      canonical: 'https://mediaconvert.io/compress/compress-png',
+      canonical: 'https://mediaconvert.online/compress/compress-png',
       keywords: ['comprimir png', 'reducir tamaño png', 'optimizar imagenes png']
     },
     faq: [{ question: '¿Se mantiene el fondo transparente?', answer: 'Sí, la compresión de MediaConvert no altera el canal alfa de tus PNGs.' }],
@@ -1631,7 +1631,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Comprimir WebP Online Gratis | MediaConvert',
       metaDescription: 'Comprime imágenes WebP gratis y reduce su peso para páginas web sin perder calidad visual.',
-      canonical: 'https://mediaconvert.io/compress/compress-webp',
+      canonical: 'https://mediaconvert.online/compress/compress-webp',
       keywords: ['comprimir webp', 'reducir tamaño webp', 'optimizar webp']
     },
     faq: [{ question: '¿Por qué comprimir WebP?', answer: 'Permite reducir aún más el tiempo de carga de páginas web y optimizar el consumo de datos móviles.' }],
@@ -1666,7 +1666,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Comprimir MP3 Online Gratis — Reducir Peso de Audio | MediaConvert',
       metaDescription: 'Comprime audios MP3 de forma rápida y gratuita para enviar por correo o WhatsApp.',
-      canonical: 'https://mediaconvert.io/compress/compress-mp3',
+      canonical: 'https://mediaconvert.online/compress/compress-mp3',
       keywords: ['comprimir mp3', 'reducir peso audio', 'optimizar mp3 online']
     },
     faq: [{ question: '¿Se escucha bien después de comprimir?', answer: 'Sí, conservamos las frecuencias de rango medio y vocal para mantener gran claridad.' }],
@@ -1701,7 +1701,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Comprimir MP4 Online Gratis — Reducir Peso de Vídeo | MediaConvert',
       metaDescription: 'Comprime vídeos MP4 online gratis sin perder calidad. Reduce el tamaño de vídeos pesados en segundos.',
-      canonical: 'https://mediaconvert.io/compress/compress-mp4',
+      canonical: 'https://mediaconvert.online/compress/compress-mp4',
       keywords: ['comprimir mp4', 'reducir peso video', 'comprimir video online', 'hacer video mas liviano']
     },
     faq: [{ question: '¿Puedo enviar el vídeo por WhatsApp o correo tras comprimirlo?', answer: 'Sí, queda perfectamente adaptado a los límites habituales de 25 MB y 64 MB.' }],
@@ -1741,7 +1741,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Comprimir PDF Online Gratis — Reducir Tamaño de PDF | MediaConvert',
       metaDescription: 'Comprime archivos PDF sin perder calidad de texto ni legibilidad. Seguro, rápido y sin marcas de agua.',
-      canonical: 'https://mediaconvert.io/compress/compress-pdf',
+      canonical: 'https://mediaconvert.online/compress/compress-pdf',
       keywords: ['comprimir pdf', 'reducir peso pdf', 'optimizar documento pdf', 'hacer pdf mas pequeño']
     },
     faq: [
@@ -1783,7 +1783,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     seo: {
       title: 'Crear Archivo ZIP Online Gratis — Empaquetar Archivos | MediaConvert',
       metaDescription: 'Crea archivos comprimidos .ZIP en segundos sin instalar programas. 100% privado en tu navegador.',
-      canonical: 'https://mediaconvert.io/convert/files-to-zip',
+      canonical: 'https://mediaconvert.online/convert/files-to-zip',
       keywords: ['crear archivo zip online', 'comprimir en zip', 'empaquetar archivos zip gratis', 'generar zip']
     },
     faq: [
@@ -1870,7 +1870,7 @@ export function getRelatedToolConfigs(slugs: string[]): ToolConfig[] {
 // ==========================================
 // GENERACIÓN AUTOMÁTICA DEL SITEMAP XML
 // ==========================================
-export function generateSitemapXml(domain: string = 'https://mediaconvert.io'): string {
+export function generateSitemapXml(domain: string = 'https://mediaconvert.online'): string {
   const today = new Date().toISOString().split('T')[0];
   
   // Filtrar estrictamente herramientas con sitemap.include = true

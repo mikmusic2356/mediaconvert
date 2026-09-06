@@ -593,7 +593,7 @@ export default function App() {
   const handleLogout = () => {
     const updated = updateUserProfile({
       name: 'Usuario Invitado',
-      email: 'invitado@mediaconvert.io',
+      email: 'invitado@mediaconvert.online',
       isLoggedIn: false,
     });
     setUser(updated);

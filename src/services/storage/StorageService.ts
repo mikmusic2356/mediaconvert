@@ -81,7 +81,7 @@ export class StorageService implements IStorageService {
 
     const defaultUser: UserProfile = {
       name: 'Usuario MediaConvert',
-      email: 'usuario@mediaconvert.io',
+      email: 'usuario@mediaconvert.online',
       isLoggedIn: false,
       plan: 'free',
       storageUsedBytes: 24500000, // ~24.5 MB

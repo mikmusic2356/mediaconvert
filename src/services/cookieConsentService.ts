@@ -121,7 +121,7 @@ export class CookieConsentService {
         userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148',
         language: 'es-MX',
         ipMasked: '189.203.45.xxx (México)',
-        referer: 'https://mediaconvert.io/news/'
+        referer: 'https://mediaconvert.online/news/'
       },
       {
         id: 'cc_log_seed_03',
