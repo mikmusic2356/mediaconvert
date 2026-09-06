@@ -1,0 +1,23 @@
+# Robots.txt for MediaConvert — Full Search Console & Googlebot Directives
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+Disallow: /my-files
+
+# Google AdSense Crawler & Partners
+User-agent: Mediapartners-Google
+Allow: /
+
+# Googlebot specific index directives
+User-agent: Googlebot
+Allow: /
+Allow: /news/
+Allow: /convert/
+Allow: /compress/
+Allow: /guide/
+Allow: /tools
+Allow: /sitemap
+
+# Sitemap location
+Sitemap: https://mediaconvert.io/sitemap.xml

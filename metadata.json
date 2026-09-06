@@ -1,0 +1,6 @@
+{
+  "name": "MediaConvert",
+  "description": "Plataforma web profesional para convertir, comprimir, guardar y compartir archivos de forma rápida, segura y sin publicidad engañosa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
