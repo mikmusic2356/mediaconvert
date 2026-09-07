@@ -60,7 +60,7 @@ export class ShareService implements IShareService {
   }
 
   getShareUrl(shareId: string): string {
-    const origin = typeof window !== 'undefined' ? window.location.origin : 'https://mediaconvert.io';
+    const origin = typeof window !== 'undefined' ? window.location.origin : 'https://mediaconvert.online';
     return `${origin}/share/${shareId}`;
   }
 }

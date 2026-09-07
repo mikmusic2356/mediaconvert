@@ -1282,7 +1282,7 @@ export const AdminBlogManager: React.FC<AdminBlogManagerProps> = ({ onNavigate, 
                     </span>
                     <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-xs max-w-lg">
                       <p className="text-xs text-slate-500 truncate font-mono">
-                        https://mediaconvert.io{selectedPost.category === 'news_trend' ? '/news/' : '/guide/'}{selectedPost.slug}
+                        https://mediaconvert.online{selectedPost.category === 'news_trend' ? '/news/' : '/guide/'}{selectedPost.slug}
                       </p>
                       <h4 className="text-sm font-bold text-blue-700 hover:underline leading-snug my-1 line-clamp-1">
                         {selectedPost.seoTitle || selectedPost.title || 'Título del artículo'}

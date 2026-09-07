@@ -88,7 +88,7 @@ export const GuideBlogPage: React.FC<GuideBlogPageProps> = ({ tool: rawTool, onN
       canonical.rel = 'canonical';
       document.head.appendChild(canonical);
     }
-    canonical.href = `https://mediaconvert.io/guide/${tool.slug}`;
+    canonical.href = `https://mediaconvert.online/guide/${tool.slug}`;
 
     const schemaId = 'guide-json-ld';
     let scriptTag = document.getElementById(schemaId) as HTMLScriptElement | null;
@@ -115,7 +115,7 @@ export const GuideBlogPage: React.FC<GuideBlogPageProps> = ({ tool: rawTool, onN
           'publisher': {
             '@type': 'Organization',
             'name': 'MediaConvert',
-            'url': 'https://mediaconvert.io'
+            'url': 'https://mediaconvert.online'
           }
         },
         {
