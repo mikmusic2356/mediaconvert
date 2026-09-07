@@ -40,29 +40,29 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenPrivacyPolicy,
             <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">{t.popularConversions}</h4>
             <ul className="space-y-2 text-xs text-slate-600">
               <li>
-                <button onClick={() => onNavigate('tool-page', undefined, 'jpg-to-png')} className="hover:text-blue-600 text-left">
+                <a href="/convert/jpg-to-png" onClick={(e) => { e.preventDefault(); onNavigate('tool-page', undefined, 'jpg-to-png'); }} className="hover:text-blue-600 text-left block">
                   Convert JPG to PNG
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('tool-page', undefined, 'png-to-jpg')} className="hover:text-blue-600 text-left">
+                <a href="/convert/png-to-jpg" onClick={(e) => { e.preventDefault(); onNavigate('tool-page', undefined, 'png-to-jpg'); }} className="hover:text-blue-600 text-left block">
                   Convert PNG to JPG
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('tool-page', undefined, 'mp4-to-mp3')} className="hover:text-blue-600 text-left">
+                <a href="/convert/mp4-to-mp3" onClick={(e) => { e.preventDefault(); onNavigate('tool-page', undefined, 'mp4-to-mp3'); }} className="hover:text-blue-600 text-left block">
                   Convert MP4 to MP3
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('tool-page', undefined, 'pdf-to-word')} className="hover:text-blue-600 text-left">
+                <a href="/convert/pdf-to-word" onClick={(e) => { e.preventDefault(); onNavigate('tool-page', undefined, 'pdf-to-word'); }} className="hover:text-blue-600 text-left block">
                   Convert PDF to Word
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('tool-page', undefined, 'video-to-gif')} className="hover:text-blue-600 text-left">
+                <a href="/convert/video-to-gif" onClick={(e) => { e.preventDefault(); onNavigate('tool-page', undefined, 'video-to-gif'); }} className="hover:text-blue-600 text-left block">
                   Convert Video to GIF
-                </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -72,29 +72,29 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenPrivacyPolicy,
             <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">PDF & ZIP</h4>
             <ul className="space-y-2 text-xs text-slate-600">
               <li>
-                <button onClick={() => onNavigate('tool-page', undefined, 'compress-jpg')} className="hover:text-blue-600 text-left">
+                <a href="/compress/jpg" onClick={(e) => { e.preventDefault(); onNavigate('tool-page', undefined, 'compress-jpg'); }} className="hover:text-blue-600 text-left block">
                   Compress JPG / JPEG
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('tool-page', undefined, 'compress-png')} className="hover:text-blue-600 text-left">
+                <a href="/compress/png" onClick={(e) => { e.preventDefault(); onNavigate('tool-page', undefined, 'compress-png'); }} className="hover:text-blue-600 text-left block">
                   Compress PNG
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('tool-page', undefined, 'compress-pdf')} className="hover:text-blue-600 text-left">
+                <a href="/compress/pdf" onClick={(e) => { e.preventDefault(); onNavigate('tool-page', undefined, 'compress-pdf'); }} className="hover:text-blue-600 text-left block">
                   Compress PDF
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('tool-page', undefined, 'files-to-zip')} className="hover:text-blue-600 text-left">
+                <a href="/convert/files-to-zip" onClick={(e) => { e.preventDefault(); onNavigate('tool-page', undefined, 'files-to-zip'); }} className="hover:text-blue-600 text-left block">
                   Pack to .ZIP
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('tool-page', undefined, 'jpg-to-pdf')} className="hover:text-blue-600 text-left">
+                <a href="/convert/jpg-to-pdf" onClick={(e) => { e.preventDefault(); onNavigate('tool-page', undefined, 'jpg-to-pdf'); }} className="hover:text-blue-600 text-left block">
                   Convert JPG to PDF
-                </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -104,29 +104,29 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenPrivacyPolicy,
             <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">{t.categories}</h4>
             <ul className="space-y-2 text-xs text-slate-600">
               <li>
-                <button onClick={() => onNavigate('category', 'image', undefined, 'image')} className="hover:text-blue-600 text-left">
+                <a href="/convert/image" onClick={(e) => { e.preventDefault(); onNavigate('category', 'image', undefined, 'image'); }} className="hover:text-blue-600 text-left block">
                   🖼️ {t.catImage}
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('category', 'video-audio', undefined, 'video')} className="hover:text-blue-600 text-left">
+                <a href="/convert/video-audio" onClick={(e) => { e.preventDefault(); onNavigate('category', 'video-audio', undefined, 'video'); }} className="hover:text-blue-600 text-left block">
                   🎵 {t.catVideoAudio}
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('category', 'pdf-document', undefined, 'pdf')} className="hover:text-blue-600 text-left">
+                <a href="/convert/pdf-document" onClick={(e) => { e.preventDefault(); onNavigate('category', 'pdf-document', undefined, 'pdf'); }} className="hover:text-blue-600 text-left block">
                   📄 {t.catPdfDoc}
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('category', 'gif', undefined, 'gif')} className="hover:text-blue-600 text-left">
+                <a href="/convert/gif" onClick={(e) => { e.preventDefault(); onNavigate('category', 'gif', undefined, 'gif'); }} className="hover:text-blue-600 text-left block">
                   🎞️ {t.catGif}
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('category', undefined, undefined, 'convert')} className="hover:text-blue-600 text-left">
+                <a href="/convert" onClick={(e) => { e.preventDefault(); onNavigate('category', undefined, undefined, 'convert'); }} className="hover:text-blue-600 text-left block">
                   ⚡ /convert
-                </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -136,30 +136,30 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenPrivacyPolicy,
             <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">{t.quickLinks}</h4>
             <ul className="space-y-2 text-xs text-slate-600">
               <li>
-                <button onClick={() => onNavigate('news-list')} className="hover:text-orange-600 text-left flex items-center gap-1 font-semibold text-orange-600">
+                <a href="/news" onClick={(e) => { e.preventDefault(); onNavigate('news-list'); }} className="hover:text-orange-600 text-left flex items-center gap-1 font-semibold text-orange-600">
                   <span>🔥 {t.newsAndTrends}</span>
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('my-files')} className="hover:text-blue-600 text-left">
+                <a href="/my-files" onClick={(e) => { e.preventDefault(); onNavigate('my-files'); }} className="hover:text-blue-600 text-left block">
                   {t.myFiles}
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('admin')} className="hover:text-indigo-600 text-left">
+                <a href="/admin" onClick={(e) => { e.preventDefault(); onNavigate('admin'); }} className="hover:text-indigo-600 text-left block">
                   {t.adminBlog}
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('tools')} className="hover:text-blue-600 text-left">
+                <a href="/tools" onClick={(e) => { e.preventDefault(); onNavigate('tools'); }} className="hover:text-blue-600 text-left block">
                   {t.siteDirectory}
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => onNavigate('sitemap')} className="hover:text-blue-600 text-left flex items-center gap-1">
+                <a href="/sitemap" onClick={(e) => { e.preventDefault(); onNavigate('sitemap'); }} className="hover:text-blue-600 text-left flex items-center gap-1">
                   <Globe className="w-3.5 h-3.5 text-blue-500" />
                   <span>{t.sitemapSeo}</span>
-                </button>
+                </a>
               </li>
               <li>
                 <button 
