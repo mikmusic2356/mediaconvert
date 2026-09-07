@@ -1,4 +1,4 @@
-export const INDEXNOW_KEY = 'bdad9c2d9197485ebd55da199d97309c';
+export const INDEXNOW_KEY = '4515d7816b184c05b511d4bfe4434b27';
 export const INDEXNOW_HOST = 'mediaconvert.online';
 export const INDEXNOW_KEY_LOCATION = `https://${INDEXNOW_HOST}/${INDEXNOW_KEY}.txt`;
 

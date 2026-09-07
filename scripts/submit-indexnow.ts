@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const HOST = 'mediaconvert.online';
-const KEY = 'bdad9c2d9197485ebd55da199d97309c';
+const KEY = '4515d7816b184c05b511d4bfe4434b27';
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 
 async function main() {
@@ -30,6 +30,8 @@ async function main() {
 
   const uniqueUrls = Array.from(new Set(urls));
   console.log(`🚀 Preparando envío de ${uniqueUrls.length} URLs de ${HOST} a IndexNow (Bing / MSN)...`);
+  console.log(`🔑 Clave API: ${KEY}`);
+  console.log(`📍 Ubicación de la clave: ${KEY_LOCATION}`);
 
   const payload = {
     host: HOST,
@@ -55,7 +57,7 @@ async function main() {
       const text = await response.text();
       console.warn(`⚠️ Respuesta recibida: ${text || 'Sin cuerpo de respuesta'}`);
       if (response.status === 403) {
-        console.warn('ℹ️ Asegúrate de que el archivo bdad9c2d9197485ebd55da199d97309c.txt esté desplegado en tu servidor.');
+        console.warn(`ℹ️ Asegúrate de que el archivo ${KEY}.txt esté desplegado en tu servidor.`);
       }
     }
   } catch (err) {
