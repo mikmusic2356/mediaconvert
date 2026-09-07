@@ -71,7 +71,8 @@ export const GuideBlogPage: React.FC<GuideBlogPageProps> = ({ tool: rawTool, onN
 
   // SEO tags, canonical, and Schema JSON-LD injection
   useEffect(() => {
-    const seoTitle = customPost?.seoTitle || `${title} | MediaConvert`;
+    const rawTitle = customPost?.seoTitle || title;
+    const seoTitle = rawTitle.includes('MediaConvert') ? rawTitle : (rawTitle.length > 45 ? `${rawTitle.slice(0, 45)}... | MediaConvert` : `${rawTitle} | MediaConvert`);
     document.title = seoTitle;
 
     let metaDesc = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;

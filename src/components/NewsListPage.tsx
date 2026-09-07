@@ -17,7 +17,7 @@ export const NewsListPage: React.FC<NewsListPageProps> = ({ onNavigate }) => {
     const rawNews = blogService.getPostsByCategory('news_trend');
     const localizedNews = rawNews.map(p => getLocalizedBlogPost(p, language));
     setPosts(localizedNews);
-    document.title = `🔥 ${t.newsFeedTitle} 2026 — Google Discover | MediaConvert`;
+    document.title = `${t.newsFeedTitle} — MediaConvert`;
     const desc = document.querySelector('meta[name="description"]');
     if (desc) desc.setAttribute('content', t.newsFeedSubtitle);
   }, [language, t]);

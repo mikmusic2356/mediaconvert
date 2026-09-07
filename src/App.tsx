@@ -529,7 +529,7 @@ export default function App() {
     } else if (view === 'admin') {
       setCurrentToolSlug(null);
       window.history.pushState({}, '', getLocalizedPath('/admin'));
-      document.title = 'Panel Administrativo — Constructor de Blogs & SEO | MediaConvert';
+      document.title = 'Panel Administrativo — MediaConvert';
     } else if (view === 'share') {
       setCurrentToolSlug(null);
       setCurrentShareId(shareId || null);
@@ -543,11 +543,11 @@ export default function App() {
       setCurrentCategorySlug(cat);
       const path = cat === 'convert' ? '/convert' : `/convert/${cat}`;
       window.history.pushState({}, '', getLocalizedPath(path));
-      document.title = `${cat === 'convert' ? 'Todas las Herramientas' : cat.toUpperCase()} — Conversores y Utilidades MediaConvert`;
+      document.title = `${cat === 'convert' ? 'Todas las Herramientas' : cat.toUpperCase()} — MediaConvert`;
     } else if (view === 'sitemap') {
       setCurrentToolSlug(null);
       window.history.pushState({}, '', getLocalizedPath('/sitemap'));
-      document.title = 'Mapa del Sitio & Directorio de Herramientas — MediaConvert';
+      document.title = 'Mapa del Sitio — MediaConvert';
     } else if (view === 'my-files') {
       setCurrentToolSlug(null);
       window.history.pushState({}, '', getLocalizedPath('/my-files'));
@@ -569,7 +569,7 @@ export default function App() {
     } else {
       setCurrentToolSlug(null);
       window.history.pushState({}, '', getLocalizedPath('/'));
-      document.title = 'MediaConvert — Convierte, Comprime y Comparte Archivos Sin Límites';
+      document.title = 'MediaConvert — Convierte y Comprime Archivos Online';
     }
 
     if (catFilter) {

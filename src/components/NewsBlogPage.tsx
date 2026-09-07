@@ -319,7 +319,8 @@ export const NewsBlogPage: React.FC<NewsBlogPageProps> = ({ slug, onNavigate }) 
     );
 
     if (found) {
-      document.title = found.seoTitle || `${found.title} | ${t.newsFeedTitle} MediaConvert`;
+      const rawNewsTitle = found.seoTitle || found.title;
+      document.title = rawNewsTitle.includes('MediaConvert') ? rawNewsTitle : (rawNewsTitle.length > 45 ? `${rawNewsTitle.slice(0, 45)}... | MediaConvert` : `${rawNewsTitle} | MediaConvert`);
       const desc = document.querySelector('meta[name="description"]');
       if (desc) desc.setAttribute('content', found.seoMetaDescription || found.excerpt || '');
 
