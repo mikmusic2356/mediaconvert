@@ -54,7 +54,6 @@ import { GuideBlogPage } from './components/GuideBlogPage';
 import { NewsBlogPage } from './components/NewsBlogPage';
 import { NewsListPage } from './components/NewsListPage';
 import { AdminBlogManager } from './components/admin/AdminBlogManager';
-import { AdBanner } from './components/AdBanner';
 import { CookieBanner } from './components/CookieBanner';
 import { PrivacyPolicyModal, CookiePolicyModal } from './components/LegalModals';
 
@@ -615,21 +614,11 @@ export default function App() {
         onOpenSearch={() => setIsSearchModalOpen(true)}
       />
 
-      {/* Main Content Area with Centered Div & Lateral AdSense Rails */}
+      {/* Main Content Area */}
       <main className="flex-1 pb-16">
-        <div className="w-full max-w-[1600px] mx-auto px-3 sm:px-4 lg:px-6">
-          <div className="flex justify-center items-start gap-4 lg:gap-6">
-            {/* Left Lateral Ad Rail (Google AdSense Skyscraper) */}
-            <div className="hidden xl:block w-[160px] 2xl:w-[180px] shrink-0 sticky top-20 self-start space-y-6 pt-4">
-              <AdBanner slotType="vertical-skyscraper" />
-            </div>
-
-            {/* Central Main Content Container */}
-            <div className="flex-1 min-w-0 max-w-5xl w-full mx-auto">
-              {/* Optional Top Leaderboard Ad */}
-              <AdBanner slotType="horizontal-leaderboard" className="mb-6" />
-
-              {currentView === 'admin' ? (
+        <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="w-full">
+            {currentView === 'admin' ? (
                 /* View: Admin Blog CMS & Builder Panel */
                 <AdminBlogManager
                   onNavigate={handleNavigate}
@@ -771,15 +760,6 @@ export default function App() {
                   <SecuritySection />
                 </div>
               )}
-
-              {/* Bottom Leaderboard Ad before Footer */}
-              <AdBanner slotType="horizontal-leaderboard" className="mt-12" />
-            </div>
-
-            {/* Right Lateral Ad Rail (Google AdSense Skyscraper) */}
-            <div className="hidden xl:block w-[160px] 2xl:w-[180px] shrink-0 sticky top-20 self-start space-y-6 pt-4">
-              <AdBanner slotType="vertical-skyscraper" />
-            </div>
           </div>
         </div>
       </main>
