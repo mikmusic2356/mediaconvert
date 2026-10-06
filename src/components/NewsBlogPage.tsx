@@ -319,8 +319,8 @@ export const NewsBlogPage: React.FC<NewsBlogPageProps> = ({ slug, onNavigate }) 
     );
 
     if (found) {
-      const rawNewsTitle = found.seoTitle || found.title;
-      document.title = rawNewsTitle.includes('MediaConvert') ? rawNewsTitle : (rawNewsTitle.length > 45 ? `${rawNewsTitle.slice(0, 45)}... | MediaConvert` : `${rawNewsTitle} | MediaConvert`);
+      const rawNewsTitle = found.h1 || found.title || found.seoTitle || '';
+      document.title = rawNewsTitle.includes('MediaConvert') ? rawNewsTitle : `${rawNewsTitle} | MediaConvert`;
       const desc = document.querySelector('meta[name="description"]');
       if (desc) desc.setAttribute('content', found.seoMetaDescription || found.excerpt || '');
 

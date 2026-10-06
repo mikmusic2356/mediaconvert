@@ -131,51 +131,91 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenPrivacyPolicy,
             </ul>
           </div>
 
-          {/* Col 5: Plataforma & Legal */}
+          {/* Col 5: Plataforma & Confianza E-E-A-T */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">{t.quickLinks}</h4>
             <ul className="space-y-2 text-xs text-slate-600">
               <li>
-                <a href="/news" onClick={(e) => { e.preventDefault(); onNavigate('news-list'); }} className="hover:text-orange-600 text-left flex items-center gap-1 font-semibold text-orange-600">
+                <a 
+                  href="/about" 
+                  onClick={(e) => { e.preventDefault(); onNavigate('about'); }} 
+                  className="hover:text-blue-600 text-left block font-medium"
+                >
+                  Sobre Nosotros
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/contact" 
+                  onClick={(e) => { e.preventDefault(); onNavigate('contact'); }} 
+                  className="hover:text-blue-600 text-left block font-medium"
+                >
+                  Contacto & Soporte
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/news" 
+                  onClick={(e) => { e.preventDefault(); onNavigate('news-list'); }} 
+                  className="hover:text-orange-600 text-left flex items-center gap-1 font-semibold text-orange-600"
+                >
                   <span>🔥 {t.newsAndTrends}</span>
                 </a>
               </li>
               <li>
-                <a href="/my-files" onClick={(e) => { e.preventDefault(); onNavigate('my-files'); }} className="hover:text-blue-600 text-left block">
+                <a 
+                  href="/my-files" 
+                  onClick={(e) => { e.preventDefault(); onNavigate('my-files'); }} 
+                  className="hover:text-blue-600 text-left block"
+                >
                   {t.myFiles}
                 </a>
               </li>
               <li>
-                <a href="/admin" onClick={(e) => { e.preventDefault(); onNavigate('admin'); }} className="hover:text-indigo-600 text-left block">
-                  {t.adminBlog}
-                </a>
-              </li>
-              <li>
-                <a href="/tools" onClick={(e) => { e.preventDefault(); onNavigate('tools'); }} className="hover:text-blue-600 text-left block">
+                <a 
+                  href="/tools" 
+                  onClick={(e) => { e.preventDefault(); onNavigate('tools'); }} 
+                  className="hover:text-blue-600 text-left block"
+                >
                   {t.siteDirectory}
                 </a>
               </li>
               <li>
-                <a href="/sitemap" onClick={(e) => { e.preventDefault(); onNavigate('sitemap'); }} className="hover:text-blue-600 text-left flex items-center gap-1">
+                <a 
+                  href="/sitemap" 
+                  onClick={(e) => { e.preventDefault(); onNavigate('sitemap'); }} 
+                  className="hover:text-blue-600 text-left flex items-center gap-1"
+                >
                   <Globe className="w-3.5 h-3.5 text-blue-500" />
                   <span>{t.sitemapSeo}</span>
                 </a>
               </li>
               <li>
-                <button 
-                  onClick={onOpenPrivacyPolicy}
-                  className="hover:text-blue-600 text-left cursor-pointer transition-colors"
+                <a 
+                  href="/privacy" 
+                  onClick={(e) => { e.preventDefault(); onNavigate('privacy'); }} 
+                  className="hover:text-blue-600 text-left block transition-colors"
                 >
                   {t.privacyPolicy}
-                </button>
+                </a>
               </li>
               <li>
-                <button 
-                  onClick={onOpenCookiePolicy}
-                  className="hover:text-blue-600 text-left cursor-pointer transition-colors"
+                <a 
+                  href="/terms" 
+                  onClick={(e) => { e.preventDefault(); onNavigate('terms'); }} 
+                  className="hover:text-blue-600 text-left block transition-colors"
+                >
+                  Términos de Servicio
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/cookies" 
+                  onClick={(e) => { e.preventDefault(); onNavigate('cookies'); }} 
+                  className="hover:text-blue-600 text-left block transition-colors"
                 >
                   Política de Cookies
-                </button>
+                </a>
               </li>
             </ul>
           </div>

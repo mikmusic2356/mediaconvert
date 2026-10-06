@@ -3,841 +3,877 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mediaconvert.online</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/compress</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/tools</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/news</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://mediaconvert.online/about</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/contact</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/privacy</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/terms</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/cookies</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://mediaconvert.online/sitemap</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/image</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/video</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/audio</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/pdf</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/gif</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/zip</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/jpg-to-png</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/jpg-to-png</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/png-to-jpg</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/png-to-jpg</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/image-converter</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/image-converter</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/webp-to-png</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/webp-to-png</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/jfif-to-png</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/jfif-to-png</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/png-to-svg</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/png-to-svg</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/heic-to-jpg</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/heic-to-jpg</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/heic-to-png</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/heic-to-png</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/webp-to-jpg</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/webp-to-jpg</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/svg-converter</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/svg-converter</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/video-converter</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/video-converter</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/audio-converter</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/audio-converter</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/mp3-converter</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/mp3-converter</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/mp4-converter</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/mp4-converter</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/mp4-to-mp3</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/mp4-to-mp3</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/video-to-mp3</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/video-to-mp3</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/mov-to-mp4</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/mov-to-mp4</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/mp3-to-ogg</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/mp3-to-ogg</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/pdf-converter</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/pdf-converter</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/document-converter</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/document-converter</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/ebook-converter</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/ebook-converter</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/pdf-to-word</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/pdf-to-word</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/pdf-to-jpg</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/pdf-to-jpg</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/pdf-to-epub</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/pdf-to-epub</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/epub-to-pdf</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/epub-to-pdf</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/heic-to-pdf</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/heic-to-pdf</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/docx-to-pdf</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/docx-to-pdf</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/jpg-to-pdf</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/jpg-to-pdf</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/video-to-gif</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/video-to-gif</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/mp4-to-gif</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/mp4-to-gif</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/webm-to-gif</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/webm-to-gif</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/apng-to-gif</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/apng-to-gif</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/gif-to-mp4</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/gif-to-mp4</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/gif-to-apng</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/gif-to-apng</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/image-to-gif</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/image-to-gif</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/mov-to-gif</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/mov-to-gif</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/avi-to-gif</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/avi-to-gif</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/compress/compress-jpg</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/compress-jpg</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/compress/compress-png</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/compress-png</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/compress/compress-webp</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/compress-webp</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/compress/compress-mp3</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/compress-mp3</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/compress/compress-mp4</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/compress-mp4</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/compress/compress-pdf</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mediaconvert.online/guide/compress-pdf</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/convert/files-to-zip</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/guide/files-to-zip</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/guide/video-audio</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/mp4-to-mp3</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://mediaconvert.online/guide/imagen</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/jpg-to-png</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://mediaconvert.online/guide/pdf-documentos</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/mov-to-mp4</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://mediaconvert.online/guide/gif</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/webp-to-jpg</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://mediaconvert.online/guide/archivos-zip</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/pdf-to-word</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/guide/jpg-to-png</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/png-to-jpg</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/image-converter</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/webp-to-png</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/jfif-to-png</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/png-to-svg</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/heic-to-jpg</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/heic-to-png</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/webp-to-jpg</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/svg-converter</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/video-converter</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/audio-converter</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/mp3-converter</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/mp4-converter</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/mp4-to-mp3</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/video-to-mp3</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/mov-to-mp4</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/mp3-to-ogg</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/pdf-converter</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/document-converter</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/ebook-converter</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/pdf-to-word</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/pdf-to-jpg</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/pdf-to-epub</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/epub-to-pdf</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/heic-to-pdf</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/docx-to-pdf</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/jpg-to-pdf</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/video-to-gif</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/mp4-to-gif</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/webm-to-gif</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/apng-to-gif</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/gif-to-mp4</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/gif-to-apng</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/image-to-gif</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/mov-to-gif</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/avi-to-gif</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/compress-jpg</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/compress-png</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/compress-webp</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/compress-mp3</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/compress-mp4</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/compress-pdf</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/guide/files-to-zip</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediaconvert.online/news/guia-definitiva-como-extraer-y-convertir-audio-mp4-a-mp3</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mediaconvert.online/news/imagenes-pesan-mas-2026-cambiar-formato-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/webp-domina-2026-png-necesario-convertir-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/webp-domina-en-2026-pero-png-sigue-siendo-necesario-conviertelo-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/por-que-aparece-jfif-2026-convertir-a-png-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/por-que-aparece-jfif-en-2026-descubre-como-convertirlo-a-png-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/convertir-imagenes-mas-util-2026-png-a-svg-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/en-2026-convertir-imagenes-es-mas-util-que-nunca-pasa-png-a-svg-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/foto-heic-no-abre-2026-convertir-a-jpg-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/tu-foto-heic-no-abre-en-2026-puedes-convertirla-a-jpg-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/tu-heic-no-funciona-pasarlo-a-png-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/tu-heic-no-funciona-descubre-como-pasarlo-a-png-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/webp-crece-2026-jpg-necesario-convertir-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/webp-crece-en-2026-pero-jpg-sigue-siendo-necesario-conviertelo-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/svg-gana-terreno-2026-convertir-imagenes-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/svg-gana-terreno-en-2026-descubre-como-convertir-tus-imagenes-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/pdf-sigue-dominando-2026-convertirlo-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/el-pdf-sigue-dominando-en-2026-descubre-como-convertirlo-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/demasiados-formatos-2026-convertir-documentos-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/demasiados-formatos-en-2026-aprende-a-convertir-tus-documentos-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/tu-ebook-no-abre-2026-convertirlo-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/tu-ebook-no-abre-en-2026-descubre-como-convertirlo-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/necesitas-editar-un-pdf-2026-pasarlo-a-word-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/necesitas-editar-un-pdf-en-2026-puedes-pasarlo-a-word-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/necesitas-imagen-de-tu-pdf-extraerla-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/necesitas-una-imagen-de-tu-pdf-descubre-como-extraerla-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/leer-pdf-como-ebook-pasarlo-a-epub-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/quieres-leer-tu-pdf-como-ebook-descubre-como-pasarlo-a-epub-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/imprimir-tu-ebook-2026-convierte-epub-a-pdf-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/necesitas-imprimir-tu-ebook-en-2026-convierte-epub-a-pdf-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/fotos-convertirse-en-documentos-heic-a-pdf-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/tus-fotos-pueden-convertirse-en-documentos-hazlo-gratis-en-2026</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/antes-de-enviar-documento-2026-pasalo-a-pdf-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/antes-de-enviar-tu-documento-en-2026-pasalo-a-pdf-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/tienes-muchas-fotos-unirlas-en-un-pdf-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/tienes-muchas-fotos-descubre-como-unirlas-en-un-pdf-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/los-gif-vuelven-a-crecer-2026-crearlos-desde-videos-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/los-gif-vuelven-a-crecer-en-2026-aprende-a-crearlos-desde-tus-videos-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/momento-de-video-convertirse-en-gif-gratis-2026</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/ese-momento-de-tu-video-puede-convertirse-en-gif-hazlo-gratis-en-2026</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/tienes-un-webm-convertirlo-a-gif-gratis-2026</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/tienes-un-webm-descubre-como-convertirlo-a-gif-gratis-en-2026</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/apng-vs-gif-2026-cambiar-entre-formatos-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/apng-vs-gif-en-2026-descubre-como-cambiar-entre-formatos-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/tu-gif-pesa-demasiado-pasarlo-a-mp4-gratis-2026</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/tu-gif-pesa-demasiado-en-2026-puedes-pasarlo-a-mp4-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/gif-se-esta-quedando-atras-convertirlo-a-apng-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/el-gif-se-esta-quedando-atras-descubre-como-convertirlo-a-apng-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/imagenes-pueden-tener-vida-convertirlas-en-gif-gratis-2026</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/tus-imagenes-pueden-tener-vida-en-2026-conviertelas-en-gif-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/momento-perfecto-en-mov-convertirlo-en-gif-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/tienes-un-momento-perfecto-en-mov-conviertelo-en-gif-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/viejos-avi-todavia-sirven-convertirlos-en-gif-gratis-2026</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/tus-viejos-avi-todavia-sirven-en-2026-conviertelos-en-gif-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/videos-pesan-mas-reducirlos-gratis-2026</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/en-2026-tus-videos-pesan-mas-aprende-a-reducirlos-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/audio-cambiando-2026-convertir-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/el-audio-esta-cambiando-en-2026-descubre-como-convertirlo-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/mp3-sigue-siendo-util-2026-convertir-audios</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/el-mp3-sigue-siendo-util-en-2026-descubre-como-convertir-tus-audios-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/mp4-falla-al-publicar-solucion-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/tu-mp4-falla-al-publicarlo-descubre-como-solucionarlo-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/videos-esconden-algo-mas-extraer-audio-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/tus-videos-esconden-algo-mas-en-2026-aprende-a-extraer-el-audio-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/sacar-mas-de-tus-videos-convertir-audio-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/este-2026-puedes-sacar-mas-de-tus-videos-convierte-su-audio-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/mov-no-funciona-convertir-a-mp4-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/tu-mov-no-funciona-donde-necesitas-descubre-como-pasarlo-a-mp4-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mediaconvert.online/news/mp3-vs-ogg-2026-cambiar-formato-gratis</loc>
-    <lastmod>2026-09-06</lastmod>
+    <loc>https://mediaconvert.online/news/mp3-vs-ogg-en-2026-descubre-como-cambiar-de-formato-gratis</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

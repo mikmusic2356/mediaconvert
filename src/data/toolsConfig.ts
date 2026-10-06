@@ -61,7 +61,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'JPG a PNG',
     shortName: 'JPG a PNG',
-    title: 'Convertir JPG a PNG Online Online Gratis | MediaConvert',
+    title: 'Convertir JPG a PNG Online Gratis | MediaConvert',
     h1: 'Convertir JPG a PNG',
     description: 'Convierte tus imágenes JPG a formato PNG con máxima nitidez y fidelidad cromática directamente en tu navegador.',
     contextualDescription: 'Esta herramienta permite convertir imágenes JPG al formato PNG de forma sencilla. El usuario puede cargar una imagen JPG, procesarla y obtener una versión PNG compatible con diferentes aplicaciones y usos digitales.',
@@ -73,7 +73,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     maxFileSize: 2147483648, // 2GB
 
     whatIsFrom: {
-      title: 'Convertir ¿Qué es el formato JPG? Gratis | MediaConvert',
+      title: '¿Qué es el formato JPG?',
       badge: 'Joint Photographic Experts Group',
       description: 'JPG (o JPEG) es el estándar de compresión de imágenes fotográficas más extendido en el mundo digital. Utiliza un algoritmo de compresión con pérdidas (lossy) basado en la Transformada de Coseno Discreta (DCT), descartando información visual imperceptible para el ojo humano con el objetivo de reducir enormemente el peso del archivo. No admite canal alfa (transparencia) ni capas.',
       pros: ['Archivos muy livianos ideales para almacenar fotos', 'Compatibilidad absoluta en cualquier dispositivo o navegador', 'Excelente reproducción de gradientes cromáticos y tonos continuos'],
@@ -81,7 +81,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     },
 
     whatIsTo: {
-      title: 'Convertir ¿Qué es el formato PNG? Gratis | MediaConvert',
+      title: '¿Qué es el formato PNG?',
       badge: 'Portable Network Graphics',
       description: 'PNG es un estándar abierto de mapa de bits diseñado específicamente para suplir las carencias de los formatos antiguos en la web. Emplea un algoritmo de compresión sin pérdidas (lossless) basado en DEFLATE (LZ77 + codificación Huffman). Admite color verdadero de 24 bits y un canal alfa independiente de 8 bits que proporciona hasta 256 niveles de transparencia gradual.',
       pros: ['Compresión sin pérdidas que mantiene la nitidez al 100%', 'Soporte completo de canal alfa y fondos transparentes', 'Bordes nítidos perfectos para tipografía, iconos, capturas y diseño gráfico'],
@@ -93,19 +93,19 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       description: 'La conversión de JPG a formato PNG es fundamental cuando necesitas manipular o utilizar una imagen en entornos donde la calidad, la transparencia y la estabilidad de píxeles son prioritarias.',
       points: [
         {
-          title: 'Convertir Detener la degradación acumulativa | MediaConvert',
+          title: 'Detener la degradación acumulativa',
           desc: 'Cada vez que guardas o editas un archivo JPG, el algoritmo de compresión comprime de nuevo los bloques de 8x8 píxeles, acumulando ruido y borrosidad. Al convertir a PNG, la imagen queda congelada en compresión sin pérdidas, permitiendo editar y exportar infinitas veces sin perder nitidez.'
         },
         {
-          title: 'Convertir Preparación para recortar fondos y aplicar transparencias | MediaConvert',
+          title: 'Preparación para recortar fondos y aplicar transparencias',
           desc: 'Los archivos JPG siempre tienen un fondo de color sólido. Al pasarlo a PNG, puedes abrirlo en cualquier software o editor para aislar objetos, eliminar el fondo y aprovechar el canal alfa RGBA.'
         },
         {
-          title: 'Convertir Logotipos, capturas de pantalla y gráficos UI | MediaConvert',
+          title: 'Logotipos, capturas de pantalla y gráficos UI',
           desc: 'Las interfaces de usuario, esquemas técnicos y textos sufren distorsión en JPG por artefactos de alta frecuencia. En PNG, las líneas rectas y el contraste de bordes se representan con absoluta claridad.'
         },
         {
-          title: 'Convertir Requisitos de plataformas y motores de renderizado | MediaConvert',
+          title: 'Requisitos de plataformas y motores de renderizado',
           desc: 'Muchos motores de videojuegos (Unity, Unreal), sistemas de impresión digital y herramientas de diseño (Figma, Illustrator, Canva) exigen archivos rasterizados PNG para asegurar máxima fidelidad.'
         }
       ]
@@ -114,22 +114,22 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     whatHappensDuringConversion: [
       {
         step: 1,
-        title: 'Convertir Lectura y decodificación local en RAM | MediaConvert',
+        title: 'Lectura y decodificación local en RAM',
         explanation: 'El navegador lee el archivo JPG a través de la API File y decodifica la matriz DCT directamente en la memoria local, sin enviar ni un solo byte a servidores externos.'
       },
       {
         step: 2,
-        title: 'Convertir Reconstrucción de la matriz de píxeles RGBA | MediaConvert',
+        title: 'Reconstrucción de la matriz de píxeles RGBA',
         explanation: 'Se crea un lienzo en memoria de alta resolución (Canvas 2D con aceleración por hardware GPU) renderizando los valores de color de 32 bits (Rojo, Verde, Azul y canal Alfa predeterminado).'
       },
       {
         step: 3,
-        title: 'Convertir Filtro de predicción y compresión DEFLATE | MediaConvert',
+        title: 'Filtro de predicción y compresión DEFLATE',
         explanation: 'El motor serializa los píxeles mediante los filtros Paeth del estándar PNG y aplica la compresión LZ77 sin pérdidas, generando un archivo binario PNG puro.'
       },
       {
         step: 4,
-        title: 'Convertir Generación instantánea del archivo descargable | MediaConvert',
+        title: 'Generación instantánea del archivo descargable',
         explanation: 'Se construye un Blob binario en tu navegador listo para descarga inmediata, empaquetado en .ZIP o almacenamiento en tu biblioteca.'
       }
     ],
@@ -161,17 +161,17 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     howToSteps: [
       {
         step: 1,
-        title: 'Convertir Selecciona o arrastra tus archivos JPG | MediaConvert',
+        title: 'Selecciona o arrastra tus archivos JPG',
         instruction: 'Arrastra tus imágenes .jpg o .jpeg al área de carga superior o búscalas en tu almacenamiento local.'
       },
       {
         step: 2,
-        title: 'Convertir Configura las opciones de salida | MediaConvert',
+        title: 'Configura las opciones de salida',
         instruction: 'El formato PNG se preselecciona automáticamente. Opcionalmente puedes ajustar dimensiones, escala o filtros.'
       },
       {
         step: 3,
-        title: 'Convertir Descarga tu imagen PNG Gratis | MediaConvert',
+        title: 'Descarga tu imagen PNG Gratis',
         instruction: 'Haz clic en Convertir y descarga tus archivos PNG convertidos al instante de forma individual o en un archivo .ZIP.'
       }
     ],
@@ -190,7 +190,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       ]
     },
     seo: {
-      title: 'Convertir JPG a PNG Online Gratis Gratis | MediaConvert',
+      title: 'JPG a PNG Online Gratis Gratis',
       metaDescription: 'Convierte archivos JPG a PNG en alta calidad y sin pérdidas. Conversión local, instantánea, segura y 100% privada sin subir tus imágenes a servidores.',
       canonical: 'https://mediaconvert.online/convert/jpg-to-png',
       keywords: ['convertir jpg a png', 'jpg to png', 'jpeg a png', 'transformar jpg en png transparente', 'conversor imagenes gratis']
@@ -233,7 +233,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'PNG a JPG',
     shortName: 'PNG a JPG',
-    title: 'Convertir PNG a JPG Online Online Gratis | MediaConvert',
+    title: 'Comprimir PNG a JPG Online Gratis | MediaConvert',
     h1: 'Convertir PNG a JPG',
     description: 'Transforma imágenes PNG a formato JPG con compresión optimizada y máxima compatibilidad.',
     contextualDescription: 'El conversor de PNG a JPG de MediaConvert transforma imágenes pesadas en archivos JPEG ligeros con un equilibrio perfecto entre calidad visual y tamaño de archivo.',
@@ -255,7 +255,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tus JPGs listos', instruction: 'Obtén los archivos optimizados individualmente o en un paquete .ZIP.' }
     ],
     seo: {
-      title: 'Convertir PNG a JPG Online Online Gratis | MediaConvert',
+      title: 'Comprimir PNG a JPG Online Gratis | MediaConvert',
       metaDescription: 'Convierte tus imágenes PNG a JPG en segundos. Reduce el peso de tus fotos conservando máxima calidad visual.',
       canonical: 'https://mediaconvert.online/convert/png-to-jpg',
       keywords: ['convertir png a jpg', 'png to jpg', 'png a jpeg', 'reducir tamaño png a jpg']
@@ -304,7 +304,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tus imágenes', instruction: 'Guarda los archivos convertidos individualmente o en .ZIP.' }
     ],
     seo: {
-      title: 'Convertir Convertidor de Imágenes Online | MediaConvert',
+      title: 'Convertidor de Imágenes Online',
       metaDescription: 'Convierte imágenes a cualquier formato online: JPG, PNG, WebP, SVG, HEIC y más. Rápido, seguro y privado.',
       canonical: 'https://mediaconvert.online/convert/image-converter',
       keywords: ['convertidor de imagenes', 'convertir imagenes online', 'conversor formato imagen', 'image converter free']
@@ -331,7 +331,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'WEBP a PNG',
     shortName: 'WEBP a PNG',
-    title: 'Convertir WEBP a PNG Online Gratis Gratis | MediaConvert',
+    title: 'WEBP a PNG Online Gratis Gratis',
     h1: 'Convertir WEBP a PNG',
     description: 'Transforma imágenes WebP modernas a formato PNG compatible con todos los editores y sistemas operativos.',
     contextualDescription: 'Convierte imágenes en formato WebP a PNG conservando la transparencia alfa y la nitidez original para utilizarlas en Photoshop, Office y visores clásicos.',
@@ -348,7 +348,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga en PNG', instruction: 'Guarda tu archivo PNG transparente.' }
     ],
     seo: {
-      title: 'Convertir WEBP a PNG Online Online Gratis | MediaConvert',
+      title: 'WEBP a PNG Online Gratis',
       metaDescription: 'Convierte WebP a PNG con canal alfa transparente y máxima resolución. 100% privado en tu navegador.',
       canonical: 'https://mediaconvert.online/convert/webp-to-png',
       keywords: ['webp a png', 'convertir webp a png', 'transformar webp en png transparente']
@@ -368,7 +368,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'JFIF a PNG',
     shortName: 'JFIF a PNG',
-    title: 'Convertir JFIF a PNG Online Gratis Gratis | MediaConvert',
+    title: 'JFIF a PNG Online Gratis Gratis',
     h1: 'Convertir JFIF a PNG',
     description: 'Convierte archivos JFIF a formato estándar PNG para abrirlos en cualquier aplicación.',
     contextualDescription: 'Las imágenes descargadas de la web en formato .jfif suelen dar problemas en editores tradicionales. Conviértelas a PNG con máxima compatibilidad.',
@@ -385,7 +385,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu PNG', instruction: 'Guarda tu archivo PNG universal.' }
     ],
     seo: {
-      title: 'Convertir JFIF a PNG Online Gratis Gratis | MediaConvert',
+      title: 'JFIF a PNG Online Gratis Gratis',
       metaDescription: 'Transforma imágenes JFIF a PNG en segundos. Conversor gratuito y sin registros.',
       canonical: 'https://mediaconvert.online/convert/jfif-to-png',
       keywords: ['jfif a png', 'convertir jfif a png', 'cambiar jfif a png']
@@ -403,7 +403,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'PNG a SVG',
     shortName: 'PNG a SVG',
-    title: 'Convertir PNG a SVG Online Online Gratis | MediaConvert',
+    title: 'Comprimir PNG a SVG Online Gratis | MediaConvert',
     h1: 'Convertir PNG a SVG Vectorial',
     description: 'Transforma mapas de bits PNG en gráficos vectoriales escalables SVG sin pérdida de resolución.',
     contextualDescription: 'Vectoriza logotipos, iconos, ilustraciones y firmas en formato PNG a gráficos vectoriales SVG listos para diseño web, corte láser e imprenta.',
@@ -420,7 +420,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga el SVG', instruction: 'Guarda tu archivo vectorial .svg.' }
     ],
     seo: {
-      title: 'Convertir PNG a SVG Online Gratis Gratis | MediaConvert',
+      title: 'PNG a SVG Online Gratis Gratis',
       metaDescription: 'Convierte imágenes PNG a vectores SVG escalables. Ideal para logotipos, iconos y diseño gráfico.',
       canonical: 'https://mediaconvert.online/convert/png-to-svg',
       keywords: ['png a svg', 'convertir png a svg', 'vectorizar png', 'png to svg converter']
@@ -438,7 +438,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'HEIC a JPG',
     shortName: 'HEIC a JPG',
-    title: 'Convertir HEIC a JPG Online Online Gratis | MediaConvert',
+    title: 'Convertir HEIC a JPG Online Gratis | MediaConvert',
     h1: 'Convertir HEIC a JPG',
     description: 'Convierte fotos de iPhone y iPad en formato HEIC/HEIF a JPG estándar compatible con Windows y Android.',
     contextualDescription: 'Las fotos tomadas en dispositivos Apple utilizan el contenedor HEIC. Conviértelas a formato JPG universal para visualizarlas y compartirlas en cualquier dispositivo.',
@@ -455,7 +455,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tus JPGs', instruction: 'Descarga individual o en archivo .ZIP.' }
     ],
     seo: {
-      title: 'Convertir HEIC a JPG Online Gratis Gratis | MediaConvert',
+      title: 'HEIC a JPG Online Gratis Gratis',
       metaDescription: 'Convierte fotos HEIC de Apple a JPG en alta calidad sin perder resolución. Rápido y 100% seguro.',
       canonical: 'https://mediaconvert.online/convert/heic-to-jpg',
       keywords: ['heic a jpg', 'convertir heic a jpg', 'fotos iphone a jpg', 'heif to jpg']
@@ -473,7 +473,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'HEIC a PNG',
     shortName: 'HEIC a PNG',
-    title: 'Convertir HEIC a PNG Online Online Gratis | MediaConvert',
+    title: 'Convertir HEIC a PNG Online Gratis | MediaConvert',
     h1: 'Convertir HEIC a PNG',
     description: 'Transforma fotos HEIC de dispositivos iOS a formato PNG con máxima nitidez y sin compresión con pérdidas.',
     contextualDescription: 'Convierte archivos HEIC a PNG para edición profesional, diseño y conservación de calidad absoluta en computadoras Windows y Linux.',
@@ -490,7 +490,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga el PNG', instruction: 'Guarda tus archivos en PNG.' }
     ],
     seo: {
-      title: 'Convertir HEIC a PNG Online Gratis Gratis | MediaConvert',
+      title: 'HEIC a PNG Online Gratis Gratis',
       metaDescription: 'Convierte fotos HEIC a PNG en alta calidad sin pérdida de detalles. 100% privado.',
       canonical: 'https://mediaconvert.online/convert/heic-to-png',
       keywords: ['heic a png', 'convertir heic a png', 'heif to png']
@@ -508,7 +508,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'WEBP a JPG',
     shortName: 'WEBP a JPG',
-    title: 'Convertir WEBP a JPG Online Gratis Gratis | MediaConvert',
+    title: 'WEBP a JPG Online Gratis Gratis',
     h1: 'Convertir WEBP a JPG',
     description: 'Convierte imágenes WebP a JPG tradicional con compatibilidad total en visores y aplicaciones.',
     contextualDescription: 'Transforma archivos WebP descargados de internet en fotos JPG compatibles con editores antiguos, televisores y marcos digitales.',
@@ -525,7 +525,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tus JPGs', instruction: 'Descarga individual o en .ZIP.' }
     ],
     seo: {
-      title: 'Convertir WEBP a JPG Online Gratis Gratis | MediaConvert',
+      title: 'WEBP a JPG Online Gratis Gratis',
       metaDescription: 'Convierte imágenes WebP a JPG en segundos. Gratuito, rápido y sin marcas de agua.',
       canonical: 'https://mediaconvert.online/convert/webp-to-jpg',
       keywords: ['webp a jpg', 'convertir webp a jpg', 'webp to jpeg']
@@ -543,7 +543,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'SVG Convertidor',
     shortName: 'SVG Convertidor',
-    title: 'Convertir Convertidor SVG Online Gratis | MediaConvert',
+    title: 'Convertidor SVG Online Gratis',
     h1: 'Convertidor de Archivos SVG',
     description: 'Convierte archivos SVG a PNG, JPG o convierte mapas de bits a gráficos vectoriales SVG.',
     contextualDescription: 'Herramienta bidireccional para exportar vectores SVG a imágenes rasterizadas de alta resolución o rasterizados a vectores escalables.',
@@ -560,7 +560,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga el resultado', instruction: 'Guarda tu archivo convertido.' }
     ],
     seo: {
-      title: 'Convertir Convertidor SVG Online Gratis | MediaConvert',
+      title: 'Convertidor SVG Online Gratis',
       metaDescription: 'Convierte archivos SVG a PNG, JPG, PDF o vectoriza imágenes a SVG online. Gratis y rápido.',
       canonical: 'https://mediaconvert.online/convert/svg-converter',
       keywords: ['svg converter', 'convertir svg', 'svg a png', 'conversor vectorial']
@@ -598,7 +598,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu vídeo convertido', instruction: 'Guarda tu vídeo optimizado.' }
     ],
     seo: {
-      title: 'Convertir Convertidor de Vídeo Online Gratis | MediaConvert',
+      title: 'Convertidor de Vídeo Online Gratis',
       metaDescription: 'Convierte vídeos online a MP4, MOV, WebM y más formatos de alta calidad sin marcas de agua.',
       canonical: 'https://mediaconvert.online/convert/video-converter',
       keywords: ['convertidor de video', 'video converter online', 'convertir mp4', 'convertir video a mp3']
@@ -616,7 +616,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'Convertidor de Audio',
     shortName: 'Convertidor de Audio',
-    title: 'Convertir Convertidor de Audio Online | MediaConvert',
+    title: 'Convertidor de Audio Online',
     h1: 'Convertidor de Audio Universal',
     description: 'Transforma pistas de audio a MP3, WAV, OGG, FLAC o AAC con control de bitrate y calidad de estudio.',
     contextualDescription: 'Herramienta de conversión acústica para archivos de sonido, podcasts, grabaciones de voz y pistas musicales sin pérdida de fidelidad.',
@@ -633,7 +633,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tus pistas', instruction: 'Descarga individual o en .ZIP.' }
     ],
     seo: {
-      title: 'Convertir Convertidor de Audio Online | MediaConvert',
+      title: 'Convertidor de Audio Online',
       metaDescription: 'Convierte pistas de audio entre formatos MP3, WAV, OGG, AAC y FLAC con máxima calidad sonora.',
       canonical: 'https://mediaconvert.online/convert/audio-converter',
       keywords: ['convertidor de audio', 'audio converter', 'convertir mp3', 'wav a mp3']
@@ -651,7 +651,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'MP3 Convertidor',
     shortName: 'MP3 Convertidor',
-    title: 'Convertir Convertidor a MP3 Online Gratis | MediaConvert',
+    title: 'Convertidor a MP3 Online Gratis',
     h1: 'Convertidor a MP3 Online',
     description: 'Convierte cualquier archivo de audio o vídeo a formato MP3 estándar compatible con todos los reproductores.',
     contextualDescription: 'Transforma grabaciones WAV, OGG, M4A, FLAC o vídeos MP4 a MP3 con codificación nítida a 320 kbps.',
@@ -668,7 +668,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu MP3', instruction: 'Guarda tu pista de audio MP3.' }
     ],
     seo: {
-      title: 'Convertir Convertidor MP3 Online Gratis | MediaConvert',
+      title: 'Convertidor MP3 Online Gratis',
       metaDescription: 'Convierte audios y vídeos a MP3 online en alta calidad (320 kbps). Fácil, rápido y gratis.',
       canonical: 'https://mediaconvert.online/convert/mp3-converter',
       keywords: ['mp3 converter', 'convertir a mp3', 'conversor mp3 gratis']
@@ -686,7 +686,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'MP4 Convertidor',
     shortName: 'MP4 Convertidor',
-    title: 'Convertir Convertidor a MP4 Online Gratis | MediaConvert',
+    title: 'Convertidor a MP4 Online Gratis',
     h1: 'Convertidor a MP4 Online',
     description: 'Transforma cualquier archivo de vídeo (MOV, WebM, AVI, MKV) al formato universal MP4.',
     contextualDescription: 'MP4 con codificación H.264/AAC es el estándar por excelencia en internet y dispositivos móviles. Convierte cualquier vídeo para garantizar su reproducción.',
@@ -703,7 +703,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu MP4', instruction: 'Guarda tu vídeo listo para compartir.' }
     ],
     seo: {
-      title: 'Convertir Convertidor MP4 Online Gratis | MediaConvert',
+      title: 'Convertidor MP4 Online Gratis',
       metaDescription: 'Convierte vídeos a MP4 online gratis. Soporta MOV, AVI, MKV, WebM a MP4 en alta calidad.',
       canonical: 'https://mediaconvert.online/convert/mp4-converter',
       keywords: ['mp4 converter', 'convertir a mp4', 'conversor mp4 online', 'mov a mp4']
@@ -721,7 +721,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'MP4 a MP3',
     shortName: 'MP4 a MP3',
-    title: 'Convertir MP4 a MP3 Online Online Gratis | MediaConvert',
+    title: 'MP4 a MP3 Online Gratis',
     h1: 'Convertir MP4 a MP3',
     description: 'Extrae la pista de audio de vídeos MP4 y guárdala como archivo MP3 en alta calidad.',
     contextualDescription: 'Convierte vídeos musicales, conferencias, podcasts y grabaciones MP4 en archivos de audio MP3 ligeros para escuchar en cualquier lugar.',
@@ -738,7 +738,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu MP3', instruction: 'Guarda tu archivo MP3.' }
     ],
     seo: {
-      title: 'Convertir MP4 a MP3 Online Gratis Gratis | MediaConvert',
+      title: 'MP4 a MP3 Online Gratis Gratis',
       metaDescription: 'Convierte MP4 a MP3 online en segundos. Extrae pistas de audio de vídeos en alta calidad sin descargas.',
       canonical: 'https://mediaconvert.online/convert/mp4-to-mp3',
       keywords: ['mp4 a mp3', 'convertir mp4 a mp3', 'extraer audio de video', 'mp4 to mp3 converter']
@@ -756,7 +756,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'Video a MP3',
     shortName: 'Video a MP3',
-    title: 'Convertir Video a MP3 Online Online Gratis | MediaConvert',
+    title: 'Video a MP3 Online Gratis',
     h1: 'Convertir Cualquier Video a MP3',
     description: 'Extrae el sonido de cualquier formato de vídeo (MP4, MOV, MKV, AVI, WebM) a MP3.',
     contextualDescription: 'Convierte grabaciones de cámara, vídeos descargados o transmisiones a pistas de audio MP3 compatibles con cualquier smartphone y reproductor.',
@@ -773,7 +773,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tus audios', instruction: 'Guarda tus archivos MP3.' }
     ],
     seo: {
-      title: 'Convertir Video a MP3 Online Gratis Gratis | MediaConvert',
+      title: 'Video a MP3 Online Gratis Gratis',
       metaDescription: 'Convierte vídeos de cualquier formato a MP3 online. Rápido, gratis y sin programas.',
       canonical: 'https://mediaconvert.online/convert/video-to-mp3',
       keywords: ['video a mp3', 'convertir video a mp3', 'extraer musica de video']
@@ -791,7 +791,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'MOV a MP4',
     shortName: 'MOV a MP4',
-    title: 'Convertir MOV a MP4 Online Online Gratis | MediaConvert',
+    title: 'MOV a MP4 Online Gratis',
     h1: 'Convertir MOV a MP4',
     description: 'Transforma vídeos QuickTime MOV grabados con iPhone o Mac en archivos MP4 estándar.',
     contextualDescription: 'Los vídeos en formato MOV suelen ser pesados y dar problemas de reproducción en Windows o Android. Conviértelos a MP4 para máxima compatibilidad.',
@@ -808,7 +808,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu MP4', instruction: 'Guarda tu vídeo compatible.' }
     ],
     seo: {
-      title: 'Convertir MOV a MP4 Online Gratis Gratis | MediaConvert',
+      title: 'MOV a MP4 Online Gratis Gratis',
       metaDescription: 'Convierte vídeos MOV de iPhone y Mac a formato MP4 online. Alta calidad y rápida conversión.',
       canonical: 'https://mediaconvert.online/convert/mov-to-mp4',
       keywords: ['mov a mp4', 'convertir mov a mp4', 'quicktime a mp4', 'mov to mp4 converter']
@@ -826,7 +826,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'MP3 a OGG',
     shortName: 'MP3 a OGG',
-    title: 'Convertir MP3 a OGG Online Gratis Gratis | MediaConvert',
+    title: 'MP3 a OGG Online Gratis Gratis',
     h1: 'Convertir MP3 a OGG Vorbis',
     description: 'Convierte pistas de audio MP3 a formato abierto OGG Vorbis para videojuegos y desarrollo web.',
     contextualDescription: 'El contenedor OGG con codec Vorbis u Opus es el estándar libre utilizado en motores de videojuegos (Unity, Godot) y plataformas web de streaming.',
@@ -843,7 +843,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu OGG', instruction: 'Guarda tu archivo de audio OGG.' }
     ],
     seo: {
-      title: 'Convertir MP3 a OGG Online Gratis Gratis | MediaConvert',
+      title: 'MP3 a OGG Online Gratis Gratis',
       metaDescription: 'Convierte archivos MP3 a OGG Vorbis online en alta calidad. Rápido, seguro y gratuito.',
       canonical: 'https://mediaconvert.online/convert/mp3-to-ogg',
       keywords: ['mp3 a ogg', 'convertir mp3 a ogg', 'mp3 to ogg vorbis']
@@ -864,7 +864,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'PDF Convertidor',
     shortName: 'PDF Convertidor',
-    title: 'Convertir Convertidor de PDF Online Gratis | MediaConvert',
+    title: 'Convertidor de PDF Online Gratis',
     h1: 'Convertidor de PDF Universal',
     description: 'Convierte archivos PDF a Word, imágenes JPG, libros EPUB o transforma documentos a PDF.',
     contextualDescription: 'Herramienta integral de gestión de documentos PDF. Exporta páginas a imágenes, convierte contratos a Word editable o compila imágenes en un único archivo PDF.',
@@ -881,7 +881,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga el documento', instruction: 'Guarda tu archivo convertido.' }
     ],
     seo: {
-      title: 'Convertir Convertidor de PDF Online Gratis | MediaConvert',
+      title: 'Convertidor de PDF Online Gratis',
       metaDescription: 'Convierte archivos PDF a Word, JPG, EPUB y más. Herramienta online gratuita sin registros.',
       canonical: 'https://mediaconvert.online/convert/pdf-converter',
       keywords: ['pdf converter', 'convertir pdf', 'conversor pdf online', 'pdf a word']
@@ -899,7 +899,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'Documento Convertidor',
     shortName: 'Documento Convertidor',
-    title: 'Convertir Convertidor de Documentos Online | MediaConvert',
+    title: 'Convertidor de Documentos Online',
     h1: 'Convertidor de Documentos',
     description: 'Convierte documentos entre DOCX, PDF, RTF, TXT, CSV, JSON y Markdown de forma segura.',
     contextualDescription: 'Transforma archivos de texto y ofimática entre formatos editables y contenedores de lectura universales.',
@@ -934,7 +934,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'Convertidor de Libros Electrónicos',
     shortName: 'Convertidor Ebook',
-    title: 'Convertir Convertidor de Libros Electrónicos | MediaConvert',
+    title: 'Convertidor de Libros Electrónicos',
     h1: 'Convertidor de Libros Electrónicos (Ebooks)',
     description: 'Convierte libros digitales entre EPUB, PDF, MOBI, AZW3 y TXT para Kindle, Kobo o iPad.',
     contextualDescription: 'Adapta tus lecturas a cualquier dispositivo de tinta electrónica o lector de libros electrónicos ajustando paginación y estructura de capítulos.',
@@ -951,7 +951,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu libro adaptado', instruction: 'Listo para transferir a tu e-reader.' }
     ],
     seo: {
-      title: 'Convertir Convertidor de Ebooks Online Gratis | MediaConvert',
+      title: 'Convertidor de Ebooks Online Gratis',
       metaDescription: 'Convierte libros electrónicos entre EPUB, PDF y MOBI online. Compatible con Kindle y Kobo.',
       canonical: 'https://mediaconvert.online/convert/ebook-converter',
       keywords: ['ebook converter', 'convertidor libros electronicos', 'epub a pdf', 'pdf a epub']
@@ -969,7 +969,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'PDF a Word',
     shortName: 'PDF a Word',
-    title: 'Convertir PDF a Word Online Gratis Gratis | MediaConvert',
+    title: 'PDF a Word Online Gratis Gratis',
     h1: 'Convertir PDF a Word Editable (DOCX)',
     description: 'Transforma documentos PDF en archivos Microsoft Word (.docx) 100% editables conservando el formato original.',
     contextualDescription: 'Convierte contratos, informes y facturas PDF en documentos de Word con párrafos, tablas e imágenes totalmente editables.',
@@ -986,7 +986,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga en Word', instruction: 'Abre y edita en Microsoft Word o Google Docs.' }
     ],
     seo: {
-      title: 'Convertir PDF a Word Online Gratis Gratis | MediaConvert',
+      title: 'PDF a Word Online Gratis Gratis',
       metaDescription: 'Convierte PDF a Word (DOCX) online gratis y editable. Conserva tipografía, tablas e imágenes.',
       canonical: 'https://mediaconvert.online/convert/pdf-to-word',
       keywords: ['pdf a word', 'convertir pdf a word', 'pdf to word editable', 'pdf a docx']
@@ -1004,7 +1004,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'PDF a JPG',
     shortName: 'PDF a JPG',
-    title: 'Convertir PDF a JPG Online Online Gratis | MediaConvert',
+    title: 'Convertir PDF a JPG Online Gratis | MediaConvert',
     h1: 'Convertir PDF a JPG',
     description: 'Convierte cada página de tu documento PDF en una imagen JPG de alta resolución o extrae las fotos incrustadas.',
     contextualDescription: 'Transforma páginas de documentos PDF en imágenes JPG nítidas para compartirlas en redes sociales o insertarlas en presentaciones.',
@@ -1021,7 +1021,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tus fotos', instruction: 'Guarda las páginas individuales o el paquete .ZIP.' }
     ],
     seo: {
-      title: 'Convertir PDF a JPG Online Gratis Gratis | MediaConvert',
+      title: 'PDF a JPG Online Gratis Gratis',
       metaDescription: 'Convierte documentos PDF a imágenes JPG en alta definición online. Fácil y gratis.',
       canonical: 'https://mediaconvert.online/convert/pdf-to-jpg',
       keywords: ['pdf a jpg', 'convertir pdf a jpg', 'extraer imagenes pdf', 'pdf to jpg']
@@ -1039,7 +1039,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'PDF a EPUB',
     shortName: 'PDF a EPUB',
-    title: 'Convertir PDF a EPUB Online Online Gratis | MediaConvert',
+    title: 'Convertir PDF a EPUB Online Gratis | MediaConvert',
     h1: 'Convertir PDF a EPUB',
     description: 'Convierte documentos y libros en PDF al formato de libro electrónico fluido EPUB para leer cómodamente.',
     contextualDescription: 'Los PDFs tienen formato rígido que dificulta la lectura en pantallas pequeñas. Al convertir a EPUB, el texto se ajusta automáticamente al tamaño de tu pantalla.',
@@ -1056,7 +1056,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu EPUB', instruction: 'Léelo en tu aplicación de libros favorita.' }
     ],
     seo: {
-      title: 'Convertir PDF a EPUB Online Gratis Gratis | MediaConvert',
+      title: 'PDF a EPUB Online Gratis Gratis',
       metaDescription: 'Convierte archivos PDF a formato EPUB online para leer en Kindle, Kobo o iPad.',
       canonical: 'https://mediaconvert.online/convert/pdf-to-epub',
       keywords: ['pdf a epub', 'convertir pdf a epub', 'pdf to epub converter']
@@ -1074,7 +1074,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'EPUB a PDF',
     shortName: 'EPUB a PDF',
-    title: 'Convertir EPUB a PDF Online Online Gratis | MediaConvert',
+    title: 'Convertir EPUB a PDF Online Gratis | MediaConvert',
     h1: 'Convertir EPUB a PDF',
     description: 'Convierte libros electrónicos EPUB en documentos PDF listos para imprimir o leer en cualquier computadora.',
     contextualDescription: 'Transforma tus libros digitales EPUB en archivos PDF con páginas numeradas y maquetación fija apta para imprimir.',
@@ -1091,7 +1091,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu PDF', instruction: 'Guarda tu documento PDF listo.' }
     ],
     seo: {
-      title: 'Convertir EPUB a PDF Online Gratis Gratis | MediaConvert',
+      title: 'EPUB a PDF Online Gratis Gratis',
       metaDescription: 'Convierte libros EPUB a formato PDF online para imprimir o leer en PC.',
       canonical: 'https://mediaconvert.online/convert/epub-to-pdf',
       keywords: ['epub a pdf', 'convertir epub a pdf', 'epub to pdf converter']
@@ -1109,7 +1109,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'HEIC a PDF',
     shortName: 'HEIC a PDF',
-    title: 'Convertir HEIC a PDF Online Online Gratis | MediaConvert',
+    title: 'Convertir HEIC a PDF Online Gratis | MediaConvert',
     h1: 'Convertir Fotos HEIC a PDF',
     description: 'Une y convierte fotos de iPhone en formato HEIC en un único documento PDF organizado.',
     contextualDescription: 'Convierte fotos de recibos, documentos o imágenes HEIC de tu iPhone directamente a un archivo PDF consolidado para trámites y envíos.',
@@ -1126,7 +1126,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu PDF', instruction: 'Guarda tu archivo PDF listo.' }
     ],
     seo: {
-      title: 'Convertir HEIC a PDF Online Gratis Gratis | MediaConvert',
+      title: 'HEIC a PDF Online Gratis Gratis',
       metaDescription: 'Convierte fotos HEIC de iPhone a documento PDF online. Une múltiples imágenes en un archivo.',
       canonical: 'https://mediaconvert.online/convert/heic-to-pdf',
       keywords: ['heic a pdf', 'convertir heic a pdf', 'fotos iphone a pdf']
@@ -1144,7 +1144,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'DOCX a PDF',
     shortName: 'DOCX a PDF',
-    title: 'Convertir DOCX a PDF Online Gratis Gratis | MediaConvert',
+    title: 'DOCX a PDF Online Gratis Gratis',
     h1: 'Convertir Word DOCX a PDF',
     description: 'Convierte documentos de Word (.docx, .doc) a formato PDF bloqueado con maquetación exacta.',
     contextualDescription: 'Guarda tus documentos de Word como archivos PDF para asegurar que nadie modifique el contenido y que se visualice idéntico en cualquier dispositivo.',
@@ -1161,7 +1161,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu PDF', instruction: 'Guarda tu PDF listo para enviar.' }
     ],
     seo: {
-      title: 'Convertir Word DOCX a PDF Online Gratis | MediaConvert',
+      title: 'Word DOCX a PDF Online Gratis',
       metaDescription: 'Convierte documentos Word DOCX a PDF online en alta calidad. Rápido, seguro y gratuito.',
       canonical: 'https://mediaconvert.online/convert/docx-to-pdf',
       keywords: ['docx a pdf', 'convertir word a pdf', 'doc a pdf', 'word to pdf']
@@ -1179,7 +1179,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'JPG a PDF',
     shortName: 'JPG a PDF',
-    title: 'Convertir JPG a PDF Online Online Gratis | MediaConvert',
+    title: 'Convertir JPG a PDF Online Gratis | MediaConvert',
     h1: 'Convertir Imágenes JPG a PDF',
     description: 'Combina imágenes JPG, JPEG y PNG en un único archivo PDF ordenado y fácil de compartir.',
     contextualDescription: 'Une fotografías de documentos, facturas escaneadas o catálogos en un archivo PDF con orientación de página ajustable.',
@@ -1196,7 +1196,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu PDF', instruction: 'Guarda tu documento compilado.' }
     ],
     seo: {
-      title: 'Convertir JPG a PDF Online Gratis Gratis | MediaConvert',
+      title: 'JPG a PDF Online Gratis Gratis',
       metaDescription: 'Convierte imágenes JPG a PDF online. Une fotos en un solo documento de forma rápida y gratuita.',
       canonical: 'https://mediaconvert.online/convert/jpg-to-pdf',
       keywords: ['jpg a pdf', 'convertir jpg a pdf', 'unir fotos en pdf', 'imagenes a pdf']
@@ -1217,7 +1217,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'Video a GIF',
     shortName: 'Video a GIF',
-    title: 'Convertir Video a GIF Online Online Gratis | MediaConvert',
+    title: 'Convertir Video a GIF Online Gratis | MediaConvert',
     h1: 'Convertir Cualquier Video a GIF Animado',
     description: 'Transforma vídeos (MP4, MOV, WebM, AVI) en animaciones GIF ligeras para compartir en redes sociales y chats.',
     contextualDescription: 'Crea GIFs animados a partir de tus mejores momentos de vídeo con control de velocidad de fotogramas (FPS) y resolución optimizada.',
@@ -1234,7 +1234,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu GIF', instruction: 'Guarda tu animación GIF lista.' }
     ],
     seo: {
-      title: 'Convertir Video a GIF Online Gratis Gratis | MediaConvert',
+      title: 'Video a GIF Online Gratis Gratis',
       metaDescription: 'Convierte vídeos a GIF animados online. Rápido, fácil y sin marcas de agua.',
       canonical: 'https://mediaconvert.online/convert/video-to-gif',
       keywords: ['video a gif', 'convertir video a gif', 'crear gif de video', 'video to gif converter']
@@ -1252,7 +1252,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'MP4 a GIF',
     shortName: 'MP4 a GIF',
-    title: 'Convertir MP4 a GIF Online Gratis Gratis | MediaConvert',
+    title: 'MP4 a GIF Online Gratis Gratis',
     h1: 'Convertir MP4 a GIF Animado',
     description: 'Convierte clips de vídeo MP4 en GIFs animados de alta calidad y bajo peso.',
     contextualDescription: 'Transforma grabaciones MP4 en animaciones GIF listas para insertar en mensajes de WhatsApp, Discord, Slack o sitios web.',
@@ -1269,7 +1269,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu GIF', instruction: 'Guarda tu animación GIF.' }
     ],
     seo: {
-      title: 'Convertir MP4 a GIF Online Gratis Gratis | MediaConvert',
+      title: 'MP4 a GIF Online Gratis Gratis',
       metaDescription: 'Convierte vídeos MP4 a GIF animados online en alta calidad. Gratis y sin límites.',
       canonical: 'https://mediaconvert.online/convert/mp4-to-gif',
       keywords: ['mp4 a gif', 'convertir mp4 a gif', 'mp4 to gif online']
@@ -1287,7 +1287,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'WEBM a GIF',
     shortName: 'WEBM a GIF',
-    title: 'Convertir WEBM a GIF Online Gratis Gratis | MediaConvert',
+    title: 'WEBM a GIF Online Gratis Gratis',
     h1: 'Convertir WEBM a GIF Animado',
     description: 'Transforma vídeos en formato WebM en animaciones GIF compatibles con todas las plataformas.',
     contextualDescription: 'Convierte clips WebM de internet en archivos GIF universales que se reproducen automáticamente en cualquier navegador o aplicación.',
@@ -1304,7 +1304,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu GIF', instruction: 'Guarda tu animación.' }
     ],
     seo: {
-      title: 'Convertir WEBM a GIF Online Gratis Gratis | MediaConvert',
+      title: 'WEBM a GIF Online Gratis Gratis',
       metaDescription: 'Convierte archivos WebM a GIF animados online de forma rápida y gratuita.',
       canonical: 'https://mediaconvert.online/convert/webm-to-gif',
       keywords: ['webm a gif', 'convertir webm a gif', 'webm to gif']
@@ -1322,7 +1322,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'APNG a GIF',
     shortName: 'APNG a GIF',
-    title: 'Convertir APNG a GIF Online Online Gratis | MediaConvert',
+    title: 'Convertir APNG a GIF Online Gratis | MediaConvert',
     h1: 'Convertir APNG a GIF',
     description: 'Convierte imágenes PNG animadas (APNG) a formato GIF estándar con compatibilidad universal.',
     contextualDescription: 'Muchas plataformas no soportan el formato PNG animado (APNG). Conviértelas a GIF tradicional para compartirlas en cualquier red social.',
@@ -1339,7 +1339,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu GIF', instruction: 'Guarda tu archivo GIF.' }
     ],
     seo: {
-      title: 'Convertir APNG a GIF Online Gratis Gratis | MediaConvert',
+      title: 'APNG a GIF Online Gratis Gratis',
       metaDescription: 'Transforma imágenes APNG animadas a formato GIF online. Rápido y gratuito.',
       canonical: 'https://mediaconvert.online/convert/apng-to-gif',
       keywords: ['apng a gif', 'convertir apng a gif', 'png animado a gif']
@@ -1357,7 +1357,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'GIF a MP4',
     shortName: 'GIF a MP4',
-    title: 'Convertir GIF a MP4 Online Online Gratis | MediaConvert',
+    title: 'Convertir GIF a MP4 Online Gratis | MediaConvert',
     h1: 'Convertir GIF Animado a Video MP4',
     description: 'Transforma animaciones GIF pesadas en vídeos MP4 ultraligeros (hasta un 90% más pequeños).',
     contextualDescription: 'Los archivos GIF utilizan tecnología antigua muy ineficiente en tamaño. Al convertirlos a vídeo MP4 con H.264 reduces drásticamente el peso manteniendo la misma animación.',
@@ -1374,7 +1374,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu vídeo MP4', instruction: 'Guarda tu vídeo optimizado.' }
     ],
     seo: {
-      title: 'Convertir GIF a MP4 Online Gratis Gratis | MediaConvert',
+      title: 'GIF a MP4 Online Gratis Gratis',
       metaDescription: 'Convierte archivos GIF a vídeos MP4 online y reduce su peso hasta un 90%. Gratis y rápido.',
       canonical: 'https://mediaconvert.online/convert/gif-to-mp4',
       keywords: ['gif a mp4', 'convertir gif a mp4', 'gif to mp4 converter', 'reducir peso gif']
@@ -1392,7 +1392,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'GIF a APNG',
     shortName: 'GIF a APNG',
-    title: 'Convertir GIF a APNG Online Online Gratis | MediaConvert',
+    title: 'Convertir GIF a APNG Online Gratis | MediaConvert',
     h1: 'Convertir GIF a PNG Animado (APNG)',
     description: 'Convierte animaciones GIF a formato APNG para mejorar la nitidez y soporte de color.',
     contextualDescription: 'Transforma GIFs limitados a 256 colores en imágenes PNG animadas con colores verdaderos y mejor fidelidad de bordes.',
@@ -1409,7 +1409,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu APNG', instruction: 'Guarda tu archivo PNG animado.' }
     ],
     seo: {
-      title: 'Convertir GIF a APNG Online Gratis Gratis | MediaConvert',
+      title: 'GIF a APNG Online Gratis Gratis',
       metaDescription: 'Convierte GIFs a PNG animados (APNG) online con mejor calidad gráfica y sin pérdidas.',
       canonical: 'https://mediaconvert.online/convert/gif-to-apng',
       keywords: ['gif a apng', 'convertir gif a apng', 'gif to apng']
@@ -1427,7 +1427,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'Imagen a GIF',
     shortName: 'Imagen a GIF',
-    title: 'Convertir Imágenes a GIF Online Gratis | MediaConvert',
+    title: 'Imágenes a GIF Online Gratis',
     h1: 'Crear GIF Animado a partir de Imágenes',
     description: 'Combina varias fotos (JPG, PNG, WebP) para crear una animación GIF con intervalo de tiempo personalizado.',
     contextualDescription: 'Une una secuencia de fotografías o diapositivas para generar un GIF animado en bucle con velocidad ajustable.',
@@ -1462,7 +1462,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'MOV a GIF',
     shortName: 'MOV a GIF',
-    title: 'Convertir MOV a GIF Online Online Gratis | MediaConvert',
+    title: 'Convertir MOV a GIF Online Gratis | MediaConvert',
     h1: 'Convertir QuickTime MOV a GIF Animado',
     description: 'Transforma vídeos MOV grabados en iPhone y Mac en animaciones GIF listas para compartir.',
     contextualDescription: 'Convierte tus Live Photos o vídeos de QuickTime MOV en animaciones GIF compatibles con cualquier chat y red social.',
@@ -1479,7 +1479,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu GIF', instruction: 'Guarda tu archivo GIF.' }
     ],
     seo: {
-      title: 'Convertir MOV a GIF Online Gratis Gratis | MediaConvert',
+      title: 'MOV a GIF Online Gratis Gratis',
       metaDescription: 'Convierte vídeos MOV de Apple a formato GIF animado online. Rápido y sin marcas de agua.',
       canonical: 'https://mediaconvert.online/convert/mov-to-gif',
       keywords: ['mov a gif', 'convertir mov a gif', 'iphone video a gif', 'mov to gif']
@@ -1497,7 +1497,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'convert',
     name: 'AVI a GIF',
     shortName: 'AVI a GIF',
-    title: 'Convertir AVI a GIF Online Gratis Gratis | MediaConvert',
+    title: 'AVI a GIF Online Gratis Gratis',
     h1: 'Convertir Vídeo AVI a GIF',
     description: 'Convierte archivos de vídeo AVI en animaciones GIF ligeras para web y mensajería.',
     contextualDescription: 'Transforma vídeos clásicos AVI en GIFs animados modernos con compresión de paleta optimizada.',
@@ -1514,7 +1514,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
       { step: 3, title: 'Descarga tu GIF', instruction: 'Guarda tu animación GIF.' }
     ],
     seo: {
-      title: 'Convertir AVI a GIF Online Gratis Gratis | MediaConvert',
+      title: 'AVI a GIF Online Gratis Gratis',
       metaDescription: 'Convierte vídeos AVI a GIF animados online en segundos. Gratis y sin registros.',
       canonical: 'https://mediaconvert.online/convert/avi-to-gif',
       keywords: ['avi a gif', 'convertir avi a gif', 'avi to gif converter']
@@ -1577,7 +1577,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'compress',
     name: 'Comprimir PNG',
     shortName: 'Comprimir PNG',
-    title: 'Comprimir PNG Online Online Gratis | MediaConvert',
+    title: 'Comprimir PNG Online Gratis | MediaConvert',
     h1: 'Comprimir Imágenes PNG Online',
     description: 'Reduce el tamaño de archivos PNG manteniendo al 100% el canal de transparencia y los bordes nítidos.',
     contextualDescription: 'Optimización de compresión DEFLATE y cuantización inteligente de colores para gráficos web, logotipos y capturas de pantalla.',
@@ -1612,7 +1612,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'compress',
     name: 'Comprimir WebP',
     shortName: 'Comprimir WebP',
-    title: 'Comprimir WebP Online Online Gratis | MediaConvert',
+    title: 'Comprimir WebP Online Gratis | MediaConvert',
     h1: 'Comprimir Imágenes WebP Online',
     description: 'Reduce el tamaño de imágenes WebP para conseguir máxima velocidad de carga web manteniendo alta nitidez.',
     contextualDescription: 'Optimiza archivos WebP mediante compresión visual inteligente para acelerar páginas web y apps móviles.',
@@ -1647,7 +1647,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'compress',
     name: 'Comprimir Audio MP3',
     shortName: 'Comprimir MP3',
-    title: 'Comprimir Audio MP3 Online Online Gratis | MediaConvert',
+    title: 'Comprimir Audio MP3 Online Gratis | MediaConvert',
     h1: 'Comprimir Archivos de Audio MP3 Online',
     description: 'Reduce la tasa de bits y el peso de tus audios MP3 para podcasts y envíos rápidos.',
     contextualDescription: 'Optimiza archivos de audio MP3 ajustando el bitrate para ahorrar espacio y facilitar envíos por mensajería.',
@@ -1682,7 +1682,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'compress',
     name: 'Comprimir Vídeo MP4',
     shortName: 'Comprimir MP4',
-    title: 'Comprimir Vídeo MP4 Online Online Gratis | MediaConvert',
+    title: 'Comprimir Vídeo MP4 Online Gratis | MediaConvert',
     h1: 'Comprimir Vídeos MP4 Online',
     description: 'Reduce drásticamente el peso de vídeos MP4 manteniendo resolución HD y sincronización de audio.',
     contextualDescription: 'Comprime clips de vídeo grabados con móvil o cámara para subirlos más rápido a redes o enviarlos por correo.',
@@ -1717,7 +1717,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'compress',
     name: 'Comprimir PDF',
     shortName: 'Comprimir PDF',
-    title: 'Comprimir Archivos PDF Online Online Gratis | MediaConvert',
+    title: 'Comprimir Archivos PDF Online Gratis | MediaConvert',
     h1: 'Comprimir Archivos PDF Online',
     description: 'Reduce el peso de documentos PDF pesados para enviarlos fácilmente por correo electrónico sin perder legibilidad.',
     contextualDescription: 'Comprime documentos PDF escaneados, contratos y presentaciones para cumplir con los límites de tamaño en correos y plataformas gubernamentales.',
@@ -1759,7 +1759,7 @@ export const TOOLS_CONFIG: Record<string, ToolConfig> = {
     type: 'utility',
     name: 'Empaquetar Archivos en .ZIP',
     shortName: 'Crear .ZIP',
-    title: 'Crear Archivo ZIP Online Online Gratis | MediaConvert',
+    title: 'Crear Archivo ZIP Online Gratis | MediaConvert',
     h1: 'Crear Archivo ZIP Comprimido Online',
     description: 'Empaqueta y comprime múltiples archivos o carpetas en un único contenedor .ZIP listo para compartir.',
     contextualDescription: 'Agrupa decenas de documentos, fotos o audios en un archivo comprimido .ZIP con compresión DEFLATE. Todo generado instantáneamente en la memoria de tu navegador.',
@@ -1808,12 +1808,14 @@ export function getToolBySlug(slug: string): ToolConfig | undefined {
 
   if (TOOLS_CONFIG[normalized]) return TOOLS_CONFIG[normalized];
 
-  // Alias maps for compress tools (e.g., comprimir-png -> compress-png)
+  // Alias maps for language variants (e.g. jpg-a-png -> jpg-to-png, comprimir-jpg -> compress-jpg)
   const mappedSlug = normalized
     .replace(/^comprimir-/, 'compress-')
     .replace(/^compresser-/, 'compress-')
-    .replace(/^convertir-a-/, 'convert-')
-    .replace(/^convertir-/, '');
+    .replace(/^convertir-a-/, '')
+    .replace(/^convertir-/, '')
+    .replace(/-a-/g, '-to-')
+    .replace(/-vers-/g, '-to-');
 
   if (TOOLS_CONFIG[mappedSlug]) return TOOLS_CONFIG[mappedSlug];
 
@@ -1825,6 +1827,7 @@ export function getToolBySlug(slug: string): ToolConfig | undefined {
          t.routePath === `/${normalized}` ||
          t.routePath === `/convert/${normalized}` ||
          t.routePath === `/compress/${normalized}` ||
+         t.routePath === `/convert/${mappedSlug}` ||
          t.routePath === `/compress/${mappedSlug}`
   );
 }
@@ -1879,12 +1882,32 @@ export function generateSitemapXml(domain: string = 'https://mediaconvert.online
   let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
   xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
 
-  // Rutas estáticas raíz
-  xml += `  <url>\n    <loc>${domain}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n`;
-  xml += `  <url>\n    <loc>${domain}/tools</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>\n`;
-  xml += `  <url>\n    <loc>${domain}/sitemap</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.7</priority>\n  </url>\n`;
+  // Rutas estáticas principales
+  const staticRoutes = [
+    { path: '', priority: '1.0', changefreq: 'daily' },
+    { path: '/convert', priority: '0.9', changefreq: 'daily' },
+    { path: '/compress', priority: '0.9', changefreq: 'daily' },
+    { path: '/tools', priority: '0.9', changefreq: 'daily' },
+    { path: '/news', priority: '0.9', changefreq: 'daily' },
+    { path: '/about', priority: '0.8', changefreq: 'monthly' },
+    { path: '/contact', priority: '0.8', changefreq: 'monthly' },
+    { path: '/privacy', priority: '0.5', changefreq: 'yearly' },
+    { path: '/terms', priority: '0.5', changefreq: 'yearly' },
+    { path: '/cookies', priority: '0.5', changefreq: 'yearly' },
+    { path: '/sitemap', priority: '0.7', changefreq: 'weekly' },
+    { path: '/convert/image', priority: '0.8', changefreq: 'weekly' },
+    { path: '/convert/video', priority: '0.8', changefreq: 'weekly' },
+    { path: '/convert/audio', priority: '0.8', changefreq: 'weekly' },
+    { path: '/convert/pdf', priority: '0.8', changefreq: 'weekly' },
+    { path: '/convert/gif', priority: '0.8', changefreq: 'weekly' },
+    { path: '/convert/zip', priority: '0.8', changefreq: 'weekly' },
+  ];
 
-  // URLs individuales de herramientas registradas automáticamente
+  staticRoutes.forEach(r => {
+    xml += `  <url>\n    <loc>${domain}${r.path}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${r.changefreq}</changefreq>\n    <priority>${r.priority}</priority>\n  </url>\n`;
+  });
+
+  // URLs individuales de herramientas y guías
   tools.forEach(tool => {
     xml += `  <url>\n    <loc>${domain}${tool.routePath}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${tool.sitemap.changeFrequency || 'weekly'}</changefreq>\n    <priority>${(tool.sitemap.priority ?? 0.8).toFixed(1)}</priority>\n  </url>\n`;
     xml += `  <url>\n    <loc>${domain}/guide/${tool.slug}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>\n`;

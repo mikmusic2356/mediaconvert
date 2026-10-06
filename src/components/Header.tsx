@@ -751,13 +751,22 @@ export const Header: React.FC<HeaderProps> = ({
 
             <button
               onClick={() => {
-                onNavigate('admin');
+                onNavigate('about');
                 setMobileMenuOpen(false);
               }}
-              className="w-full flex items-center gap-2 p-3 rounded-xl bg-indigo-50 border border-indigo-200 text-sm font-bold text-indigo-800"
+              className="w-full flex items-center gap-2 p-3 rounded-xl bg-slate-50 border border-slate-200 text-sm font-semibold text-slate-700 hover:text-blue-600"
             >
-              <Sparkles className="w-4 h-4 text-indigo-600" />
-              <span>{t.adminBlog}</span>
+              <span>ℹ️ Sobre Nosotros</span>
+            </button>
+
+            <button
+              onClick={() => {
+                onNavigate('contact');
+                setMobileMenuOpen(false);
+              }}
+              className="w-full flex items-center gap-2 p-3 rounded-xl bg-slate-50 border border-slate-200 text-sm font-semibold text-slate-700 hover:text-blue-600"
+            >
+              <span>✉️ Contacto & Soporte</span>
             </button>
           </div>
         </div>

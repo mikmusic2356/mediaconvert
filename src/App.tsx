@@ -56,12 +56,35 @@ import { NewsListPage } from './components/NewsListPage';
 import { AdminBlogManager } from './components/admin/AdminBlogManager';
 import { CookieBanner } from './components/CookieBanner';
 import { PrivacyPolicyModal, CookiePolicyModal } from './components/LegalModals';
+import { AboutUsPage } from './components/AboutUsPage';
+import { ContactPage } from './components/ContactPage';
+import { LegalPage } from './components/LegalPage';
+
+export type AppView = 
+  | 'home' 
+  | 'convert' 
+  | 'compress' 
+  | 'category' 
+  | 'my-files' 
+  | 'tools' 
+  | 'tool-page' 
+  | 'guide-page' 
+  | 'news-page' 
+  | 'news-list' 
+  | 'admin' 
+  | 'sitemap' 
+  | 'share'
+  | 'about'
+  | 'contact'
+  | 'privacy'
+  | 'terms'
+  | 'cookies';
 
 export default function App() {
   const { language, setLanguage, getLocalizedPath } = useI18n();
 
   // Navigation & View State
-  const [currentView, setCurrentView] = useState<'home' | 'convert' | 'compress' | 'category' | 'my-files' | 'tools' | 'tool-page' | 'guide-page' | 'news-page' | 'news-list' | 'admin' | 'sitemap' | 'share'>('home');
+  const [currentView, setCurrentView] = useState<AppView>('home');
   const [currentToolSlug, setCurrentToolSlug] = useState<string | null>(null);
   const [currentCategorySlug, setCurrentCategorySlug] = useState<string>('convert');
   const [currentShareId, setCurrentShareId] = useState<string | null>(null);
@@ -111,6 +134,21 @@ export default function App() {
       if (path === '/admin' || path === '/admin/' || path.startsWith('/admin')) {
         setCurrentView('admin');
         setCurrentToolSlug(null);
+      } else if (path === '/about' || path === '/about/' || path === '/sobre-nosotros' || path === '/quienes-somos') {
+        setCurrentView('about');
+        setCurrentToolSlug(null);
+      } else if (path === '/contact' || path === '/contact/' || path === '/contacto' || path === '/soporte') {
+        setCurrentView('contact');
+        setCurrentToolSlug(null);
+      } else if (path === '/privacy' || path === '/privacy/' || path === '/privacidad') {
+        setCurrentView('privacy');
+        setCurrentToolSlug(null);
+      } else if (path === '/terms' || path === '/terms/' || path === '/terminos' || path === '/condiciones') {
+        setCurrentView('terms');
+        setCurrentToolSlug(null);
+      } else if (path === '/cookies' || path === '/cookies/' || path === '/politica-cookies') {
+        setCurrentView('cookies');
+        setCurrentToolSlug(null);
       } else if (path === '/sitemap' || path === '/sitemap.xml') {
         setCurrentView('sitemap');
         setCurrentToolSlug(null);
@@ -155,14 +193,8 @@ export default function App() {
         setCurrentToolSlug(newsSlug);
       } else if (path.startsWith('/guide/') || path.startsWith('/how-to/')) {
         const slug = path.split('/').pop() || '';
-        const tool = getToolBySlug(slug);
-        if (tool) {
-          setCurrentView('guide-page');
-          setCurrentToolSlug(slug);
-        } else {
-          setCurrentView('tools');
-          setCurrentToolSlug(null);
-        }
+        setCurrentView('guide-page');
+        setCurrentToolSlug(slug);
       } else if (path.startsWith('/convert/') || path.startsWith('/compress/')) {
         const slug = path.split('/').pop() || '';
         const tool = getToolBySlug(slug);
@@ -492,7 +524,7 @@ export default function App() {
 
   // Universal Navigation Handler with Multilingual URL management (US/, ES/, FR/)
   const handleNavigate = (
-    view: 'home' | 'convert' | 'compress' | 'category' | 'my-files' | 'tools' | 'tool-page' | 'guide-page' | 'news-page' | 'news-list' | 'admin' | 'sitemap' | 'share',
+    view: AppView,
     catFilter?: FileCategory,
     toolSlug?: string,
     categorySlug?: string,
@@ -505,18 +537,38 @@ export default function App() {
 
     setCurrentView(view);
 
-    if (view === 'tool-page' && toolSlug) {
+    if (view === 'about') {
+      setCurrentToolSlug(null);
+      window.history.pushState({}, '', getLocalizedPath('/about'));
+      document.title = 'Sobre Nosotros — MediaConvert';
+    } else if (view === 'contact') {
+      setCurrentToolSlug(null);
+      window.history.pushState({}, '', getLocalizedPath('/contact'));
+      document.title = 'Contacto y Soporte — MediaConvert';
+    } else if (view === 'privacy') {
+      setCurrentToolSlug(null);
+      window.history.pushState({}, '', getLocalizedPath('/privacy'));
+      document.title = 'Política de Privacidad — MediaConvert';
+    } else if (view === 'terms') {
+      setCurrentToolSlug(null);
+      window.history.pushState({}, '', getLocalizedPath('/terms'));
+      document.title = 'Términos de Servicio — MediaConvert';
+    } else if (view === 'cookies') {
+      setCurrentToolSlug(null);
+      window.history.pushState({}, '', getLocalizedPath('/cookies'));
+      document.title = 'Política de Cookies — MediaConvert';
+    } else if (view === 'tool-page' && toolSlug) {
       setCurrentToolSlug(toolSlug);
       const tool = getToolBySlug(toolSlug);
       if (tool) {
         window.history.pushState({}, '', getLocalizedPath(tool.routePath));
+      } else {
+        window.history.pushState({}, '', getLocalizedPath(`/convert/${toolSlug}`));
       }
     } else if (view === 'guide-page' && toolSlug) {
       setCurrentToolSlug(toolSlug);
-      const tool = getToolBySlug(toolSlug);
-      if (tool) {
-        window.history.pushState({}, '', getLocalizedPath(`/guide/${tool.slug}`));
-      }
+      window.history.pushState({}, '', getLocalizedPath(`/guide/${toolSlug}`));
+      document.title = 'Guía y Tutorial Paso a Paso — MediaConvert';
     } else if (view === 'news-list') {
       setCurrentToolSlug(null);
       window.history.pushState({}, '', getLocalizedPath('/news'));
@@ -624,6 +676,21 @@ export default function App() {
                   onNavigate={handleNavigate}
                   onPreviewPost={(slug) => handleNavigate('guide-page', undefined, slug)}
                 />
+              ) : currentView === 'about' ? (
+                /* View: Sobre Nosotros (E-E-A-T) */
+                <AboutUsPage onNavigate={handleNavigate} />
+              ) : currentView === 'contact' ? (
+                /* View: Contacto y Soporte */
+                <ContactPage onNavigate={handleNavigate} />
+              ) : currentView === 'privacy' ? (
+                /* View: Política de Privacidad */
+                <LegalPage initialTab="privacy" onNavigate={handleNavigate} />
+              ) : currentView === 'terms' ? (
+                /* View: Términos de Servicio */
+                <LegalPage initialTab="terms" onNavigate={handleNavigate} />
+              ) : currentView === 'cookies' ? (
+                /* View: Política de Cookies */
+                <LegalPage initialTab="cookies" onNavigate={handleNavigate} />
               ) : currentView === 'sitemap' ? (
                 /* View: Sitemap & Directory for Crawlers and Users */
                 <SitemapView onNavigate={handleNavigate} />
@@ -648,10 +715,11 @@ export default function App() {
                   slug={currentToolSlug}
                   onNavigate={handleNavigate}
                 />
-              ) : currentView === 'guide-page' && currentToolConfig ? (
+              ) : currentView === 'guide-page' ? (
                 /* View: ¿Cómo se usa? Blog / Tutorial Page (SEO Driven) */
                 <GuideBlogPage
                   tool={currentToolConfig}
+                  slug={currentToolSlug}
                   onNavigate={handleNavigate}
                 />
               ) : currentView === 'tool-page' && currentToolConfig ? (

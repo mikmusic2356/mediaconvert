@@ -24,20 +24,237 @@ import { getToolGuideArticle, getRelatedToolConfigs, getToolBySlug } from '../da
 import { blogService } from '../services/blogService';
 import { useI18n, getLocalizedBlogPost, getLocalizedToolConfig } from '../i18n/I18nContext';
 
+/* ─── Inline markdown helper ─── */
+function inlineMarkdown(text: string): React.ReactNode {
+  const parts: React.ReactNode[] = [];
+  const pattern = /(\*\*\*(.+?)\*\*\*|\*\*(.+?)\*\*|\*(.+?)\*|_([^_]+)_|`([^`]+)`)/g;
+  let last = 0;
+  let match: RegExpExecArray | null;
+  while ((match = pattern.exec(text)) !== null) {
+    if (match.index > last) parts.push(text.slice(last, match.index));
+    if (match[2]) parts.push(<strong key={match.index} className="font-bold text-slate-900"><em className="italic">{match[2]}</em></strong>);
+    else if (match[3]) parts.push(<strong key={match.index} className="font-bold text-slate-900">{match[3]}</strong>);
+    else if (match[4]) parts.push(<em key={match.index} className="italic text-slate-800">{match[4]}</em>);
+    else if (match[5]) parts.push(<em key={match.index} className="italic text-slate-800">{match[5]}</em>);
+    else if (match[6]) parts.push(<code key={match.index} className="bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded text-xs font-mono border border-blue-200/60">{match[6]}</code>);
+    last = match.index + match[0].length;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return parts.length === 1 ? parts[0] : React.createElement(React.Fragment, null, ...parts);
+}
+
+/* ─── Markdown block renderer for Guide / Blog pages ─── */
+function renderMarkdown(raw: string): React.ReactNode[] {
+  const nodes: React.ReactNode[] = [];
+  const lines = raw.split('\n');
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i];
+
+    // Table
+    if (line.startsWith('|') && i + 1 < lines.length && lines[i + 1].match(/^\|[-| :]+\|$/)) {
+      const tableLines: string[] = [];
+      while (i < lines.length && lines[i].startsWith('|')) { tableLines.push(lines[i]); i++; }
+      const headers = tableLines[0].split('|').filter(Boolean).map(h => h.trim());
+      const rows = tableLines.slice(2).map(r => r.split('|').filter(Boolean).map(c => c.trim()));
+      nodes.push(
+        <div key={'table-' + i} className="overflow-x-auto my-6 rounded-2xl border border-slate-200 shadow-xs bg-white">
+          <table className="min-w-full text-xs sm:text-sm">
+            <thead className="bg-slate-50 border-b border-slate-200">
+              <tr>
+                {headers.map((h, hi) => (
+                  <th key={hi} className="px-4 py-3 text-left font-bold text-slate-800">
+                    {inlineMarkdown(h)}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-slate-100">
+              {rows.map((row, ri) => (
+                <tr key={ri} className="hover:bg-blue-50/30 transition-colors">
+                  {row.map((cell, ci) => (
+                    <td key={ci} className="px-4 py-3 text-slate-700 font-medium">
+                      {inlineMarkdown(cell)}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+      continue;
+    }
+
+    if (line.startsWith('### ')) {
+      nodes.push(
+        <h3 key={i} className="text-lg sm:text-xl font-extrabold text-slate-900 mt-8 mb-3 leading-tight flex items-center gap-2 pb-1 border-b border-slate-100">
+          <span className="w-1.5 h-5 rounded-full bg-blue-600 shrink-0" />
+          <span>{inlineMarkdown(line.slice(4))}</span>
+        </h3>
+      );
+      i++;
+      continue;
+    }
+
+    if (line.startsWith('## ')) {
+      nodes.push(
+        <h2 key={i} className="text-xl sm:text-2xl font-black text-slate-900 mt-10 mb-4 pb-2 border-b border-blue-100 flex items-center gap-2">
+          <span className="w-2 h-6 rounded-full bg-gradient-to-b from-blue-600 to-indigo-600 shrink-0" />
+          <span>{inlineMarkdown(line.slice(3))}</span>
+        </h2>
+      );
+      i++;
+      continue;
+    }
+
+    if (line.startsWith('# ')) {
+      nodes.push(
+        <h1 key={i} className="text-2xl sm:text-3xl font-black text-slate-900 mt-8 mb-4">
+          {inlineMarkdown(line.slice(2))}
+        </h1>
+      );
+      i++;
+      continue;
+    }
+
+    if (line.trim() === '---') {
+      nodes.push(<hr key={i} className="my-8 border-slate-200" />);
+      i++;
+      continue;
+    }
+
+    if (line.startsWith('> ')) {
+      nodes.push(
+        <blockquote key={i} className="border-l-4 border-blue-600 bg-blue-50/60 pl-4 pr-3 py-3 rounded-r-2xl my-5 text-xs sm:text-sm text-slate-800 italic shadow-2xs">
+          {inlineMarkdown(line.slice(2))}
+        </blockquote>
+      );
+      i++;
+      continue;
+    }
+
+    // Numbered list
+    if (/^\d+\.\s/.test(line)) {
+      const items: string[] = [];
+      while (i < lines.length && /^\d+\.\s/.test(lines[i])) {
+        items.push(lines[i].replace(/^\d+\.\s/, ''));
+        i++;
+      }
+      nodes.push(
+        <ol key={'ol-' + i} className="space-y-3 my-5 text-slate-700 text-sm sm:text-base leading-relaxed pl-1">
+          {items.map((item, ii) => (
+            <li key={ii} className="flex items-start gap-3">
+              <span className="w-6 h-6 rounded-full bg-blue-100 text-blue-700 text-xs font-black flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
+                {ii + 1}
+              </span>
+              <span className="flex-1">{inlineMarkdown(item)}</span>
+            </li>
+          ))}
+        </ol>
+      );
+      continue;
+    }
+
+    // Unordered list
+    if (line.startsWith('- ') || line.startsWith('* ')) {
+      const items: string[] = [];
+      while (i < lines.length && (lines[i].startsWith('- ') || lines[i].startsWith('* '))) {
+        items.push(lines[i].replace(/^[-*]\s+/, ''));
+        i++;
+      }
+      nodes.push(
+        <ul key={'ul-' + i} className="space-y-2.5 my-4 pl-2 text-xs sm:text-sm text-slate-700">
+          {items.map((item, ii) => (
+            <li key={ii} className="flex items-start gap-2.5">
+              <span className="mt-2 w-2 h-2 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 shrink-0 shadow-xs" />
+              <span className="flex-1">{inlineMarkdown(item)}</span>
+            </li>
+          ))}
+        </ul>
+      );
+      continue;
+    }
+
+    if (line.trim() === '') {
+      i++;
+      continue;
+    }
+
+    nodes.push(
+      <p key={i} className="text-slate-700 text-sm sm:text-base leading-relaxed my-4">
+        {inlineMarkdown(line)}
+      </p>
+    );
+    i++;
+  }
+  return nodes;
+}
+
 interface GuideBlogPageProps {
-  tool: ToolConfig;
+  tool?: ToolConfig | null;
+  slug?: string | null;
   onNavigate: (view: any, categoryFilter?: FileCategory, toolSlug?: string, categorySlug?: string) => void;
 }
 
-export const GuideBlogPage: React.FC<GuideBlogPageProps> = ({ tool: rawTool, onNavigate }) => {
+export const GuideBlogPage: React.FC<GuideBlogPageProps> = ({ tool: rawTool, slug: explicitSlug, onNavigate }) => {
   const { t, language } = useI18n();
-  const tool = useMemo(() => getLocalizedToolConfig(rawTool, language), [rawTool, language]);
+
+  const activeSlug = explicitSlug || rawTool?.slug || '';
 
   // 1. Fetch dynamic blog post from blogService or fallback to tool-generated guide
   const customPost = useMemo(() => {
-    const raw = blogService.getPostBySlug(tool.slug);
+    if (!activeSlug) return null;
+    const raw = blogService.getPostBySlug(activeSlug);
     return raw ? getLocalizedBlogPost(raw, language) : null;
-  }, [tool.slug, language]);
+  }, [activeSlug, language]);
+
+  const resolvedTool = useMemo(() => {
+    if (rawTool) return rawTool;
+    if (customPost?.toolSlug) {
+      const byToolSlug = getToolBySlug(customPost.toolSlug);
+      if (byToolSlug) return byToolSlug;
+    }
+    if (activeSlug) {
+      return getToolBySlug(activeSlug);
+    }
+    return undefined;
+  }, [rawTool, customPost, activeSlug]);
+
+  const tool = useMemo(() => {
+    if (resolvedTool) {
+      return getLocalizedToolConfig(resolvedTool, language);
+    }
+    // Fallback pseudo tool config for stand-alone guide articles
+    return {
+      id: customPost?.id || activeSlug || 'guide',
+      slug: customPost?.slug || activeSlug || 'guide',
+      routePath: `/convert/${activeSlug || 'jpg-to-png'}`,
+      category: 'image' as FileCategory,
+      type: 'convert' as const,
+      name: customPost?.title || 'Guía Multimedia',
+      shortName: customPost?.title || 'Guía Multimedia',
+      title: customPost?.seoTitle || 'Guía Multimedia | MediaConvert',
+      h1: customPost?.h1 || 'Guía Práctica de Conversión',
+      description: customPost?.excerpt || 'Tutorial y guía práctica paso a paso.',
+      contextualDescription: customPost?.excerpt || 'Aprende a transformar y optimizar archivos de forma privada.',
+      inputFormats: ['ARCHIVOS'],
+      outputFormats: ['OPTIMIZADO'],
+      defaultOutputFormat: 'PNG',
+      processingType: 'local' as const,
+      maxFileSize: 2147483648,
+      howToSteps: [],
+      faq: [],
+      features: ['Procesamiento local', 'Privacidad garantizada'],
+      seo: {
+        title: customPost?.seoTitle || 'Guía Multimedia | MediaConvert',
+        metaDescription: customPost?.seoMetaDescription || 'Tutorial paso a paso.',
+        canonical: `https://mediaconvert.online/guide/${activeSlug}`,
+        keywords: []
+      }
+    } as ToolConfig;
+  }, [resolvedTool, customPost, activeSlug, language]);
+
   const defaultGuide = useMemo(() => getToolGuideArticle(tool), [tool]);
 
   const allPosts = useMemo(() => {
@@ -71,8 +288,8 @@ export const GuideBlogPage: React.FC<GuideBlogPageProps> = ({ tool: rawTool, onN
 
   // SEO tags, canonical, and Schema JSON-LD injection
   useEffect(() => {
-    const rawTitle = customPost?.seoTitle || title;
-    const seoTitle = rawTitle.includes('MediaConvert') ? rawTitle : (rawTitle.length > 45 ? `${rawTitle.slice(0, 45)}... | MediaConvert` : `${rawTitle} | MediaConvert`);
+    const rawTitle = customPost?.h1 || customPost?.title || customPost?.seoTitle || title;
+    const seoTitle = rawTitle.includes('MediaConvert') ? rawTitle : `${rawTitle} | MediaConvert`;
     document.title = seoTitle;
 
     let metaDesc = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;
@@ -245,30 +462,7 @@ export const GuideBlogPage: React.FC<GuideBlogPageProps> = ({ tool: rawTool, onN
       <article className="prose prose-slate max-w-none mb-12">
         {customPost?.content ? (
           <div className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200/90 shadow-xs space-y-4 text-slate-800 text-sm sm:text-base leading-relaxed">
-            {customPost.content.split('\n\n').map((paragraph, idx) => {
-              if (paragraph.startsWith('### ')) {
-                return (
-                  <h3 key={idx} className="text-xl font-bold text-slate-900 pt-4 pb-1 border-b border-slate-100">
-                    {paragraph.replace('### ', '')}
-                  </h3>
-                );
-              }
-              if (paragraph.startsWith('---')) {
-                return <hr key={idx} className="my-6 border-slate-200" />;
-              }
-              if (paragraph.startsWith('> ')) {
-                return (
-                  <div key={idx} className="p-4 rounded-2xl bg-amber-50/80 border border-amber-200 text-amber-900 text-xs sm:text-sm font-medium my-4">
-                    {paragraph.replace('> ', '')}
-                  </div>
-                );
-              }
-              return (
-                <p key={idx} className="text-slate-700 leading-relaxed font-normal">
-                  {paragraph}
-                </p>
-              );
-            })}
+            {renderMarkdown(customPost.content)}
           </div>
         ) : (
           <div className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200/90 shadow-xs">
