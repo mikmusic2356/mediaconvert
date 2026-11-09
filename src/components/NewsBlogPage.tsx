@@ -22,6 +22,7 @@ import { BlogPost, ToolConfig } from '../types';
 import { blogService } from '../services/blogService';
 import { getToolBySlug, getAllToolConfigs } from '../data/toolsConfig';
 import { useI18n, getLocalizedBlogPost, getLocalizedToolConfig } from '../i18n/I18nContext';
+import { AdsterraBanner } from './AdsterraBanner';
 
 interface NewsBlogPageProps {
   slug: string;
@@ -535,6 +536,14 @@ export const NewsBlogPage: React.FC<NewsBlogPageProps> = ({ slug, onNavigate }) 
       {/* Main Blog Article Rich Content */}
       <div className="prose prose-slate max-w-none mb-10 text-slate-800">
         {renderMarkdown(post.content)}
+      </div>
+
+      {/* In-Article Adsterra Banner (300x250) */}
+      <div className="w-full flex flex-col items-center justify-center my-8 pt-4">
+        <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider mb-2">Publicidad</span>
+        <div className="p-2 bg-white rounded-2xl border border-slate-200/80 shadow-xs">
+          <AdsterraBanner type="300x250" />
+        </div>
       </div>
 
       {/* SEO Tags / Categorías */}

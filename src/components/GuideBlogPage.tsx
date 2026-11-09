@@ -23,6 +23,7 @@ import { ToolConfig, FileCategory, BlogPost } from '../types';
 import { getToolGuideArticle, getRelatedToolConfigs, getToolBySlug } from '../data/toolsConfig';
 import { blogService } from '../services/blogService';
 import { useI18n, getLocalizedBlogPost, getLocalizedToolConfig } from '../i18n/I18nContext';
+import { AdsterraBanner } from './AdsterraBanner';
 
 /* ─── Inline markdown helper ─── */
 function inlineMarkdown(text: string): React.ReactNode {
@@ -517,6 +518,14 @@ export const GuideBlogPage: React.FC<GuideBlogPageProps> = ({ tool: rawTool, slu
               #{t}
             </span>
           ))}
+        </div>
+
+        {/* In-Article Adsterra Banner (300x250) */}
+        <div className="w-full flex flex-col items-center justify-center my-8 pt-4">
+          <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider mb-2">Publicidad</span>
+          <div className="p-2 bg-white rounded-2xl border border-slate-200/80 shadow-xs">
+            <AdsterraBanner type="300x250" />
+          </div>
         </div>
       </article>
 

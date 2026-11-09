@@ -59,6 +59,7 @@ import { PrivacyPolicyModal, CookiePolicyModal } from './components/LegalModals'
 import { AboutUsPage } from './components/AboutUsPage';
 import { ContactPage } from './components/ContactPage';
 import { LegalPage } from './components/LegalPage';
+import { AdsterraBanner } from './components/AdsterraBanner';
 
 export type AppView = 
   | 'home' 
@@ -666,11 +667,14 @@ export default function App() {
         onOpenSearch={() => setIsSearchModalOpen(true)}
       />
 
-      {/* Main Content Area */}
+      {/* Main Content Area with Photopea-style Sticky Sidebar */}
       <main className="flex-1 pb-16">
-        <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="w-full">
-            {currentView === 'admin' ? (
+        <div className="w-full max-w-[1600px] mx-auto px-3 sm:px-4 lg:px-6">
+          <div className="flex justify-center items-start gap-4 lg:gap-6">
+            
+            {/* Center Content Area */}
+            <div className="flex-1 min-w-0 max-w-5xl w-full">
+              {currentView === 'admin' ? (
                 /* View: Admin Blog CMS & Builder Panel */
                 <AdminBlogManager
                   onNavigate={handleNavigate}
@@ -828,6 +832,25 @@ export default function App() {
                   <SecuritySection />
                 </div>
               )}
+
+              {/* Mobile Adsterra Banner (320x50) shown only on small/medium screens */}
+              <div className="xl:hidden w-full flex flex-col items-center justify-center my-8 pt-4 border-t border-slate-200/60">
+                <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider mb-2">Publicidad</span>
+                <AdsterraBanner type="320x50" />
+              </div>
+            </div>
+
+            {/* Photopea-style Sticky Right Sidebar (160x600 Desktop Banner) */}
+            <aside 
+              aria-label="Publicidad patrocinada" 
+              className="hidden xl:flex flex-col items-center shrink-0 w-[160px] 2xl:w-[180px] sticky top-20 self-start space-y-4 pt-2"
+            >
+              <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Publicidad</span>
+              <div className="p-1.5 bg-white/80 backdrop-blur-xs rounded-2xl border border-slate-200/80 shadow-xs">
+                <AdsterraBanner type="160x600" />
+              </div>
+            </aside>
+
           </div>
         </div>
       </main>
