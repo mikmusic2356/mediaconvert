@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-export type AdsterraBannerType = '160x600' | '300x250' | '320x50';
+export type AdsterraBannerType = '160x600' | '300x250' | '320x50' | '728x90';
 
 interface AdsterraBannerProps {
   type: AdsterraBannerType;
@@ -22,6 +22,11 @@ const AD_CONFIGS: Record<AdsterraBannerType, { key: string; width: number; heigh
     key: '741f63b4d4e71dff1ef32af97cd5ff64',
     width: 320,
     height: 50,
+  },
+  '728x90': {
+    key: 'c03d1f0619acb0466b0b0468e71ca186',
+    width: 728,
+    height: 90,
   },
 };
 

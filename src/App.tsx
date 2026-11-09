@@ -667,11 +667,22 @@ export default function App() {
         onOpenSearch={() => setIsSearchModalOpen(true)}
       />
 
-      {/* Main Content Area with Photopea-style Sticky Sidebar */}
+      {/* Main Content Area with Photopea-style Sticky Sidebars (Left & Right) */}
       <main className="flex-1 pb-16">
-        <div className="w-full max-w-[1600px] mx-auto px-3 sm:px-4 lg:px-6">
+        <div className="w-full max-w-[1720px] mx-auto px-2 sm:px-4 lg:px-6">
           <div className="flex justify-center items-start gap-4 lg:gap-6">
             
+            {/* Photopea-style Sticky Left Sidebar (160x600 Desktop Banner) */}
+            <aside 
+              aria-label="Publicidad patrocinada izquierda" 
+              className="hidden 2xl:flex flex-col items-center shrink-0 w-[160px] sticky top-20 self-start space-y-4 pt-2"
+            >
+              <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Publicidad</span>
+              <div className="p-1.5 bg-white/80 backdrop-blur-xs rounded-2xl border border-slate-200/80 shadow-xs">
+                <AdsterraBanner type="160x600" />
+              </div>
+            </aside>
+
             {/* Center Content Area */}
             <div className="flex-1 min-w-0 max-w-5xl w-full">
               {currentView === 'admin' ? (
@@ -815,6 +826,17 @@ export default function App() {
                         isQueueEmpty={queue.length === 0}
                       />
                     )}
+                  </div>
+
+                  {/* Horizontal Banner 728x90 (Desktop) / 300x250 (Mobile) directly below main home converter */}
+                  <div className="w-full flex flex-col items-center justify-center my-6">
+                    <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider mb-2">Publicidad</span>
+                    <div className="hidden md:flex p-2 bg-white rounded-2xl border border-slate-200/80 shadow-xs">
+                      <AdsterraBanner type="728x90" />
+                    </div>
+                    <div className="md:hidden p-2 bg-white rounded-2xl border border-slate-200/80 shadow-xs">
+                      <AdsterraBanner type="300x250" />
+                    </div>
                   </div>
 
                   {/* Tool Catalog on Homepage for Discovery */}

@@ -535,10 +535,13 @@ export const FileConverterPage: React.FC<FileConverterPageProps> = ({
           )}
         </div>
 
-        {/* In-content Responsive Adsterra Banner (300x250) positioned cleanly below converter */}
+        {/* In-content Responsive Adsterra Banner: 728x90 on Desktop / 300x250 on Mobile positioned cleanly below converter */}
         <div className="w-full flex flex-col items-center justify-center my-8 pt-4">
           <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider mb-2">Publicidad</span>
-          <div className="p-2 bg-white rounded-2xl border border-slate-200/80 shadow-xs">
+          <div className="hidden md:flex p-2 bg-white rounded-2xl border border-slate-200/80 shadow-xs">
+            <AdsterraBanner type="728x90" />
+          </div>
+          <div className="md:hidden p-2 bg-white rounded-2xl border border-slate-200/80 shadow-xs">
             <AdsterraBanner type="300x250" />
           </div>
         </div>
