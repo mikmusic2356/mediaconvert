@@ -847,6 +847,14 @@ export default function App() {
                     initialCategory={(selectedCategory as any) || 'all'}
                   />
 
+                  {/* Intermediate Banner (300x250) between Catalog and HowItWorks */}
+                  <div className="w-full flex flex-col items-center justify-center my-8">
+                    <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider mb-2">Publicidad</span>
+                    <div className="p-2 bg-white rounded-2xl border border-slate-200/80 shadow-xs">
+                      <AdsterraBanner type="300x250" />
+                    </div>
+                  </div>
+
                   {/* How It Works 3-Step Flow */}
                   <HowItWorks />
 

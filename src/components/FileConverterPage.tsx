@@ -866,6 +866,14 @@ export const FileConverterPage: React.FC<FileConverterPageProps> = ({
       {/* 9. HERRAMIENTAS RELACIONADAS */}
       {relatedTools.length > 0 && (
         <section className="w-full py-10 border-t border-slate-200/80">
+          {/* Intermediate Responsive Banner (300x250) right before related tools */}
+          <div className="w-full flex flex-col items-center justify-center mb-10">
+            <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider mb-2">Publicidad</span>
+            <div className="p-2 bg-white rounded-2xl border border-slate-200/80 shadow-xs">
+              <AdsterraBanner type="300x250" />
+            </div>
+          </div>
+
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-4">
             <div>
               <span className="text-xs font-bold uppercase tracking-wider text-blue-600 mb-1 block">
